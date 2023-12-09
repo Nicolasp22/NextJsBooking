@@ -1,0 +1,541 @@
+:root
+{
+    --violet: rgb(66, 19, 107);
+    --verde: rgb(66, 179, 66);
+    --verde_oscuro: rgb(2, 59, 2);
+    --borde: rgb(35, 4, 41);
+}
+html
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
+    url(../fotos/fondo.jpg);
+    background-position:center;
+    background-color: rgb(111, 136, 128);
+}
+body
+{
+    text-align: center;
+    background-size: cover;
+    background-position: center;
+    font-family: Montserrat, sans-serif;
+    
+}
+.formulario
+{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 600px;
+    height: 300px;
+}
+.compañia
+{
+    text-align: left;
+    width: 95%;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    color: black;
+    
+}
+.titulo
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+
+}
+.mail
+{
+    
+    margin-top: 20px;
+    width: 500px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+}
+.psw
+{
+    
+    width: 500px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+.recupero
+{
+    font-size: 22px;
+    list-style: none;
+    color: rgb(17, 17, 17);
+    text-decoration-line: none;
+    width: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--verde_oscuro);
+}
+.boton
+{
+    
+    width: 160px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: var(--verde);
+    border-style:none;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    margin-left: auto;
+    margin-right: auto;
+    transition: transform 0.5s;
+    animation-duration: 2s;
+
+}
+
+.boton input:hover
+{
+    transform: scale(1.15);
+    cursor: pointer;
+}
+
+.leyenda
+{
+    font-size: 25px;
+    font-weight: 550;
+    margin-top: 3%;
+
+}
+.crear
+{
+    font-size: 25px;
+    color: var(--verde_oscuro);
+    text-decoration-line: none;
+    font-weight: 800;
+}
+.imagen
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    margin-left: 40%;
+    bottom: 5%;
+    transition: transform 0.5s;
+    animation-duration: 1s;
+}
+.imagen:hover
+{
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1660px){
+    .formulario {
+
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        justify-content: center;
+        gap: 10px;
+        width: 700px;
+        height: 300px;
+    }
+    .compañia
+    {
+        text-align: left;
+        width: 95%;
+        font-size: 25px;
+        margin-top: 20px;
+        margin-left: 15px;
+        font-weight: 600;
+        color: black;
+        
+    }
+    .titulo
+    {
+        position: relative;
+        margin-left: auto;
+        margin-right: auto;
+        top: 50px;
+        font-size: 35px;
+        font-family: Montserrat, sans-serif;
+    }
+    .imagen 
+    {
+        position: absolute;
+        left: 50%;
+        top: 80%;
+    }
+
+}
+
+@media screen and (max-width: 1280px){
+ 
+.formulario {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    justify-content: center;
+    gap: 10px;
+    width: 800px;
+    height: 300px;
+}
+.compañia
+{
+    text-align: left;
+    width: 95%;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    color: black;
+    
+}
+.recupero{
+    font-size: 22px;
+    list-style: none;
+    text-decoration-line: none;
+    width: 1000px;
+    height: auto;
+    color: var(--verde_oscuro);
+    }
+.titulo
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    font-size: 35px;
+    font-family: Montserrat, sans-serif;
+}
+.imagen 
+{
+    position: absolute;
+    margin-left: 35%;
+    bottom: 10%;
+}
+
+}
+
+@media screen and (max-width: 1024px){
+    .imagen {
+
+    
+        position: absolute;
+        left: 50%;
+        top: 80%;
+        height: 80px;
+        width: 80px; 
+    }
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 5%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 800px;
+        height: 300px;
+    }
+    .recupero{
+    font-size: 22px;
+    list-style: none;
+    text-decoration-line: none;
+    width: 1000px;
+    height: auto;
+    color: var(--verde_oscuro);
+    }
+    .mail{
+        
+        margin-top: 20px;
+        width: 400px;
+        height: 43px;
+        border-radius: 10px;
+        border-style: hidden;
+        
+        }
+       .psw{
+        
+        width: 400px;
+        height: 43px;
+        border-radius: 10px;
+        border-style: hidden;
+        
+        
+         }
+    .compañia
+{
+    text-align: left;
+    width: 95%;
+    font-size: 25px;
+    margin-top: 20px;
+    margin-left: 15px;
+    font-weight: 600;
+    color: black;
+    
+}
+.titulo
+{
+    position: relative;
+    margin-left: auto;
+    margin-right: auto;
+    top: 50px;
+    width: 700px;
+    font-size: 30px;
+    font-family: Montserrat, sans-serif;
+}
+    
+    .leyenda {
+        font-size: 20px;
+        
+
+    }
+    .crear {
+        font-size: 20px;
+        
+
+    }
+}
+
+@media screen and (max-width: 768px){
+    .imagen {
+        position: absolute;
+        left: 45%;    
+        top: 80%;
+        width: 60px;
+        height: 60px;
+    }
+    .formulario{
+        display: flex;
+        flex-wrap: wrap;
+        margin-top: 15%;
+        margin-left: auto;
+        margin-right: auto;
+        width: 480px;
+        height: 300px;
+    }
+        .titulo{
+            font-size: 25px;
+            width: 350px;
+            margin-bottom: -5%;
+            margin-left: auto;
+            margin-right: auto;
+        }
+        .compañia{
+            font-size: 20px;
+        }
+        .mail{
+        
+        margin-top: 20px;
+        width: 400px;
+        height: 43px;
+        border-radius: 10px;
+        border-style: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        }
+       .psw{
+        
+        width: 400px;
+        height: 43px;
+        border-radius: 10px;
+        border-style: hidden;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 5px;
+        
+         }
+        .recupero{
+        font-size: 20px;
+        list-style: none;
+        color: rgb(17, 17, 17);
+        text-decoration-line: none;
+        width: 480px;
+        margin-left: auto;
+        margin-right: auto;
+        color: var(--verde_oscuro);
+        }
+        .leyenda {
+            font-size: 15px;
+            
+    
+        }
+        .crear {
+            font-size: 15px;
+           
+    
+        }
+}
+
+@media screen and (max-width: 480px){
+    .imagen {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 55%;
+        top: 60%;
+    }
+    .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 15%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 450px;
+    height: 300px;
+    }
+    .titulo{
+        font-size: 25px;
+        width: 450px;
+        height: fit-content;
+        margin-bottom: 15px;
+        margin-top: 15%;
+        justify-content: center;
+    }
+   
+    .compañia{
+        font-size: 20px;
+    }
+    .mail{
+    
+    margin-top: 20px;
+    width: 350px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    }
+   .psw{
+    
+    width: 350px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+     }
+    .recupero{
+    font-size: 20px;
+    list-style: none;
+    color: rgb(17, 17, 17);
+    text-decoration-line: none;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--verde_oscuro);
+    }
+    .leyenda {
+        font-size: 20px;
+        margin-left: 50px;
+
+    }
+    .crear {
+        font-size: 20px;
+        
+
+    }
+
+}
+@media screen and (max-width: 300px){
+
+    .imagen {
+        position: absolute;
+        width: 50px;
+        height: 50px;
+        left: 65%;
+        top: 85%;
+    }
+    .formulario{
+    display: flex;
+    flex-wrap: wrap;
+    margin-top: 5%;
+    margin-left: auto;
+    margin-right: auto;
+    width: 300px;
+    height: 300px;
+   
+    }
+    .titulo{
+        font-size: 22px;
+        width: 300px;
+        height: fit-content;
+        margin-bottom: 30px;
+
+    }
+    .compañia{
+        font-size: 20px;
+        
+    }
+    .mail{
+    
+    margin-top: 20px;
+    width: 250px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    }
+   .psw{
+    
+    width: 250px;
+    height: 43px;
+    border-radius: 10px;
+    border-style: hidden;
+    margin-left: auto;
+    margin-right: auto;
+    
+     }
+    .recupero{
+    font-size: 20px;
+    list-style: none;
+    color: rgb(17, 17, 17);
+    text-decoration-line: none;
+    width: 480px;
+    margin-left: auto;
+    margin-right: auto;
+    color: var(--verde_oscuro);
+    }
+    .leyenda {
+        font-size: 20px;
+        margin-left: 50px;
+
+    }
+    .crear {
+        font-size: 20px;
+        
+
+    }
+    .boton{
+        width: 140px;
+        height: 40px;
+    }
+}
+
+/*
+@media screen and (max-width: 240px){
+
+
+}
+
+Tamaños de pantalla estandar:
+- 1660px escritorio gama media
+- 1280px escritorio gama baja
+- 1024px tablet en landscape
+- 768px tablet en portrait
+- 480px telefonos generico
+- 340px telefonos muy peques
+*/
