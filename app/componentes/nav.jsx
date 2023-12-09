@@ -1,6 +1,7 @@
 import "./style.css"
 import Link from "next/link"
 
+
 export default function CrearCuenta () {
     return(
         <>
@@ -9,7 +10,7 @@ export default function CrearCuenta () {
             Crear Cuenta
         </div>
         <form  
-        action="./gracias/form.jsx" 
+        action="./gracias/form" 
         name="contacto" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
         <input type="text" name="nombre"/>
@@ -52,7 +53,7 @@ export default function CrearCuenta () {
             <label>
                 <input className="password-r" type="password" placeholder="Repetir Contraseña" required />
             </label></div>
-        {/* <div class="select">
+         <div class="select">
              <label> 
 
                 <select>
@@ -66,7 +67,7 @@ export default function CrearCuenta () {
                     <option value="VENEZUELA">+58</option>
                     
                 <input class="tel" type="tel" placeholder="Teléfono" required  minlength="7" />
-    </select></label></div> */}
+    </select></label></div> 
        
         <div>
             <label className="checkbox">
