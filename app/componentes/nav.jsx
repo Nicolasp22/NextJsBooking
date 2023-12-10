@@ -28,34 +28,33 @@ export default function CrearCuenta () {
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
         </select>
-        <input className="tel" type="tel" placeholder="Teléfono" />
+        <input className="tel" type="tel" placeHolder="Teléfono" />
         </form>
 
  <div className="formulario">
     <form className="contenido" method="post" >
         <div className="nombre"> 
             <label>
-                <input className="nombre" type="text" placeholder="Nombre" required autocomplete="name" />
+                <input className="nombre" type="text" placeHolder="Nombre" required autoComplete="name" />
             </label></div>
         <div className="apellido">
             <label>
-                <input className="apellido" type="text" placeholder="Apellido" required autocomplete="family-name" />
+                <input className="apellido" type="text" placeHolder="Apellido" required autoComplete="family-name" />
             </label></div>
         <div className="email">
             <label>
-                <input className="email" type="email" placeholder="Correo electrónico" required autocomplete="email" />
+                <input className="email" type="email" placeHolder="Correo electrónico" required autoComplete="email" />
             </label></div>
         <div className="password">
             <label>
-                <input className="password" type="password" placeholder="Contraseña" required autocomplete="current-password" />
+                <input className="password" type="password" placeHolder="Contraseña" required autoComplete="current-password" />
             </label></div>
         <div className="password-r">
             <label>
-                <input className="password-r" type="password" placeholder="Repetir Contraseña" required />
+                <input className="password-r" type="password" placeHolder="Repetir Contraseña" required />
             </label></div>
-         <div class="select">
+         <div className="select">
              <label> 
-
                 <select>
                     <option value="ARGENTINA">+54</option>
                     <option value="URUGUAY">+598</option>
@@ -65,9 +64,9 @@ export default function CrearCuenta () {
                     <option value="PERU">+51</option>
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
-                    
-                <input class="tel" type="tel" placeholder="Teléfono" required  minlength="7" />
-    </select></label></div> 
+                    </select>
+                <input className="tel" type="tel" placeHolder="Teléfono" required  minLength="7" />
+            </label> </div> 
        
         <div>
             <label className="checkbox">
@@ -75,12 +74,12 @@ export default function CrearCuenta () {
             </label></div>   
 
             <div>
-                <label class="boton">
-                    <input class="" type="submit" name="Registrarme" value="Registrarme" />
+                <label className="boton">
+                    <input className="" type="submit" name="Registrarme" value="Registrarme" />
                 </label></div> 
             </form>
         <div className="label">
-        <Link className="link" href="../ingresar"> 
+        <Link className="link" href="./ingresar"> 
         ¿Ya tenés cuenta? Toca aquí para ingresar </Link>
         </div>
     
@@ -90,9 +89,4 @@ export default function CrearCuenta () {
         <img className="imagen" src="../fotos/chatbot.png"/>
          </div> 
 </>
-
-
-
-
-
-    )}
+)}

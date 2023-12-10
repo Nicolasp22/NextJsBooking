@@ -1,4 +1,4 @@
-import "./style.css"
+import "./estilo.css"
 import Link from "next/link"
 
 export default function Ingresar () {
@@ -8,14 +8,14 @@ export default function Ingresar () {
         <h1 className="titulo">Iniciá Sesión</h1>
         <div>
     <form className="formulario" action="Ingresar">
-        <div class="mail">
+        <div className="mail">
         <label>
-            <input id="mail" className="mail" type="email" placeholder="Email" required autocomplete="email"/>
+            <input id="mail" className="mail" type="email" placeHolder="Email" required autoComplete="email"/>
         </label>
     </div>
         <div className="psw">
         <label>
-            <input id="psw" className="psw" type="password" placeholder="Contraseña" required autocomplete="current-password"/>
+            <input id="psw" className="psw" type="password" placeHolder="Contraseña" required autoComplete="current-password"/>
         </label>
     </div>
         <div className="recupero">
@@ -25,9 +25,9 @@ export default function Ingresar () {
         <input id="boton" className="boton" type="submit" value="Ingresar"/> </div>
     </form>
       </div>
-        <Link className="crear" href="../crearCuenta"> 
-        <p className="leyenda">¿No tenes cuenta? ¡Crea una gratis!</p> </Link>
-        <img className="imagen" src="fotos/chatbot.png"/>
+        <Link className="crear" href="../componentes/nav"> 
+        ¿No tenes cuenta? ¡Crea una gratis!</Link>
+        <img className="imagen" src="../fotos/chatbot.png"/>
         </> 
 
      )}
