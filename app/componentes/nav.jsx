@@ -10,7 +10,7 @@ export default function CrearCuenta () {
             Crear Cuenta
         </div>
         <form  
-        action="./gracias/form" 
+        action="./gracias" 
         name="contacto" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
         <input type="text" name="nombre"/>

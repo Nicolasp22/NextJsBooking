@@ -1,6 +1,7 @@
 import "./estilo.css"
 import Link from "next/link"
 
+
 export default function Ingresar () {
      return (
         <> 
@@ -25,7 +26,7 @@ export default function Ingresar () {
         <input id="boton" className="boton" type="submit" value="Ingresar"/> </div>
     </form>
       </div>
-        <Link className="crear" href="../componentes/nav"> 
+        <Link className="crear" href="../componentes"> 
         ¿No tenes cuenta? ¡Crea una gratis!</Link>
         <img className="imagen" src="../fotos/chatbot.png"/>
         </> 
