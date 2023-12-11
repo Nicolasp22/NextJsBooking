@@ -28,30 +28,30 @@ export default function CrearCuenta () {
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
         </select>
-        <input className="tel" type="tel" placeHolder="Teléfono" />
+        <input className="tel" type="tel" placeholder="Teléfono" />
         </form>
 
  <div className="formulario">
     <form className="contenido" method="post" >
         <div className="nombre"> 
             <label>
-                <input className="nombre" type="text" placeHolder="Nombre" required autoComplete="name" />
+                <input className="nombre" type="text" placeholder="Nombre" required autoComplete="name" />
             </label></div>
         <div className="apellido">
             <label>
-                <input className="apellido" type="text" placeHolder="Apellido" required autoComplete="family-name" />
+                <input className="apellido" type="text" placeholder="Apellido" required autoComplete="family-name" />
             </label></div>
         <div className="email">
             <label>
-                <input className="email" type="email" placeHolder="Correo electrónico" required autoComplete="email" />
+                <input className="email" type="email" placeholder="Correo electrónico" required autoComplete="email" />
             </label></div>
         <div className="password">
             <label>
-                <input className="password" type="password" placeHolder="Contraseña" required autoComplete="current-password" />
+                <input className="password" type="password" placeholder="Contraseña" required autoComplete="current-password" />
             </label></div>
         <div className="password-r">
             <label>
-                <input className="password-r" type="password" placeHolder="Repetir Contraseña" required />
+                <input className="password-r" type="password" placeholder="Repetir Contraseña" required />
             </label></div>
          <div className="select">
              <label> 
@@ -65,7 +65,7 @@ export default function CrearCuenta () {
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
                     </select>
-                <input className="tel" type="tel" placeHolder="Teléfono" required  minLength="7" />
+                <input className="tel" type="tel" placeholder="Teléfono" required  minLength="7" />
             </label> </div> 
        
         <div>

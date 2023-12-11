@@ -11,12 +11,12 @@ export default function Ingresar () {
     <form className="formulario" action="Ingresar">
         <div className="mail">
         <label>
-            <input id="mail" className="mail" type="email" placeHolder="Email" required autoComplete="email"/>
+            <input id="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>
         </label>
     </div>
         <div className="psw">
         <label>
-            <input id="psw" className="psw" type="password" placeHolder="Contraseña" required autoComplete="current-password"/>
+            <input id="psw" className="psw" type="password" placeholder="Contraseña" required autoComplete="current-password"/>
         </label>
     </div>
         <div className="recupero">
@@ -26,7 +26,7 @@ export default function Ingresar () {
         <input id="boton" className="boton" type="submit" value="Ingresar"/> </div>
     </form>
       </div>
-        <Link className="crear" href="../componentes"> 
+        <Link className="crear" href="http://localhost:3000/"> 
         ¿No tenes cuenta? ¡Crea una gratis!</Link>
         <img className="imagen" src="../fotos/chatbot.png"/>
         </> 
