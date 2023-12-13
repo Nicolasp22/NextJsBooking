@@ -32,7 +32,7 @@ export default function CrearCuenta () {
         </form>
 
  <div className="formulario">
-    <form className="contenido" method="post" name="crearCuenta">
+    <form className="contenido" method="post">
         <div className="nombre"> 
             <label>
                 <input className="nombre" name="nombre" type="text" placeholder="Nombre" required autoComplete="name" />
@@ -75,7 +75,7 @@ export default function CrearCuenta () {
 
             <div>
                 <label className="boton">
-                    <input type="hidden" name="form-name" value="formulario"/>
+                    <input type="hidden" name="crearCuenta" value="formulario"/>
                     <input className="" type="submit" name="Registrarme" value="Registrarme" />
                 </label></div> 
             </form>
