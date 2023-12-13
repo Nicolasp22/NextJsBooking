@@ -17,7 +17,7 @@ export default function Ingresar () {
         <h1 className="compañia">Networking</h1>
         <h1 className="titulo">Iniciá Sesión</h1>
         <div>
-    <form className="formulario" action="Ingresar">
+    <form className="formulario" action="Ingresar" method="post">
         <div className="mail">
         <label>
             <input id="mail" name="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>

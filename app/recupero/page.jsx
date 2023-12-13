@@ -21,7 +21,7 @@ export default function Recupero () {
      Recuperá tu contraseña
        </div>
         <div class="formulario">
-   <form name="recupero psw"> 
+   <form name="recupero psw" method="post"> 
  <div>
     <label>
         <input class="mail" type="email" placeholder="Tu Mail" required autocomplete="email"/>
