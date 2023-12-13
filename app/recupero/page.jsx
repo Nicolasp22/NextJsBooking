@@ -4,6 +4,17 @@ import "./style.css"
 export default function Recupero () {
     return(
        <>
+        <form  
+        action="./recupero/gracias" 
+        name="formulario" hidden 
+        data-netlify="true" netlify-honeypot="bot-field">
+<input class="mail" name="recupero" type="email" placeholder="Tu Mail" required autocomplete="email"/>
+
+
+</form>
+
+
+
         <h1 class="empresa">Networking</h1>
 <div class="contenido"> 
         <div class="subtitulos">
@@ -19,7 +30,8 @@ export default function Recupero () {
     
  <div>  
     <label class="">
-        <input class="recuperar" type="submit" value="Recuperar"/>
+        <input class="recuperar" name="recupero" type="submit" value="Recuperar"/>
+        <input type="hidden" name="form-name" value="formulario"/>
     </label>
  </div>     
     

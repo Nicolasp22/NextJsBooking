@@ -1,0 +1,19 @@
+body
+{
+    font-family: Montserrat, sans-serif;
+    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
+    url(/fotos/fondo.jpg);
+    background-position:center;
+}
+
+h2
+{
+   text-align: center;
+}
+
+h3
+{
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+}
