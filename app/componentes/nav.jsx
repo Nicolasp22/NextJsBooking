@@ -11,7 +11,7 @@ export default function CrearCuenta () {
         </div>
         <form  
         action="./componentes/gracias" 
-        name="formulario" hidden 
+        name="crearCuenta" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
         <input type="text" name="nombre"/>
         <input type="text" name="apellido"/>
@@ -32,7 +32,7 @@ export default function CrearCuenta () {
         </form>
 
  <div className="formulario">
-    <form className="contenido" method="post" >
+    <form className="contenido" method="post" name="crearCuenta">
         <div className="nombre"> 
             <label>
                 <input className="nombre" name="nombre" type="text" placeholder="Nombre" required autoComplete="name" />

@@ -5,12 +5,10 @@ export default function Recupero () {
     return(
        <>
         <form  
-        action="./recupero/gracias" 
-        name="formulario" hidden 
+        action="./recupero/automatico" 
+        name="recuperar" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
 <input class="mail" name="recupero" type="email" placeholder="Tu Mail" required autocomplete="email"/>
-
-
 </form>
 
 
@@ -21,7 +19,7 @@ export default function Recupero () {
      Recuperá tu contraseña
        </div>
         <div class="formulario">
-   <form name="recupero psw" method="post"> 
+   <form method="post" name="recuperar"> 
  <div>
     <label>
         <input class="mail" type="email" placeholder="Tu Mail" required autocomplete="email"/>

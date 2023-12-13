@@ -5,8 +5,8 @@ import Link from "next/link"
 export default function Ingresar () {
      return (
         <> 
-<form action="./ingresar/gracias" 
-        name="formulario" hidden 
+<form action="./ingresar/automatico" 
+        name="ingreso" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
 <input id="mail" name="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>
 <input id="psw" name="psw" className="psw" type="password" placeholder="Contraseña" required autoComplete="current-password"/>
@@ -17,7 +17,7 @@ export default function Ingresar () {
         <h1 className="compañia">Networking</h1>
         <h1 className="titulo">Iniciá Sesión</h1>
         <div>
-    <form className="formulario" action="Ingresar" method="post">
+    <form className="formulario" name="ingreso" action="Ingresar" method="post">
         <div className="mail">
         <label>
             <input id="mail" name="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>
