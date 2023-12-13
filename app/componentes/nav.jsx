@@ -18,7 +18,7 @@ export default function CrearCuenta () {
         <input type="email" name="email" />
         <input type="password" name="password" />
         <input type="password" name="password-r" />
-        <select> 
+        <select name="select"> 
                     <option value="ARGENTINA">+54</option>
                     <option value="URUGUAY">+598</option>
                     <option value="PARAGUAY">+595</option>
@@ -28,34 +28,34 @@ export default function CrearCuenta () {
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
         </select>
-        <input className="tel" type="tel" placeholder="Teléfono" />
+        <input className="tel" type="tel" placeholder="Teléfono" name="telefono"/>
         </form>
 
  <div className="formulario">
     <form className="contenido" method="post" >
         <div className="nombre"> 
             <label>
-                <input className="nombre" type="text" placeholder="Nombre" required autoComplete="name" />
+                <input className="nombre" name="nombre" type="text" placeholder="Nombre" required autoComplete="name" />
             </label></div>
         <div className="apellido">
             <label>
-                <input className="apellido" type="text" placeholder="Apellido" required autoComplete="family-name" />
+                <input className="apellido" name="apellido" type="text" placeholder="Apellido" required autoComplete="family-name" />
             </label></div>
         <div className="email">
             <label>
-                <input className="email" type="email" placeholder="Correo electrónico" required autoComplete="email" />
+                <input className="email" name="email" type="email" placeholder="Correo electrónico" required autoComplete="email" />
             </label></div>
         <div className="password">
             <label>
-                <input className="password" type="password" placeholder="Contraseña" required autoComplete="current-password" />
+                <input className="password"  name="password" type="password" placeholder="Contraseña" required autoComplete="current-password" />
             </label></div>
         <div className="password-r">
             <label>
-                <input className="password-r" type="password" placeholder="Repetir Contraseña" required />
+                <input className="password-r" name="password-r" type="password" placeholder="Repetir Contraseña" required />
             </label></div>
          <div className="select">
              <label> 
-                <select>
+                <select name="select">
                     <option value="ARGENTINA">+54</option>
                     <option value="URUGUAY">+598</option>
                     <option value="PARAGUAY">+595</option>
@@ -65,7 +65,7 @@ export default function CrearCuenta () {
                     <option value="COLOMBIA">+57</option>
                     <option value="VENEZUELA">+58</option>
                     </select>
-                <input className="tel" type="tel" placeholder="Teléfono" required  minLength="7" />
+                <input className="tel" name="telefono" type="tel" placeholder="Teléfono" required  minLength="7" />
             </label> </div> 
        
         <div>
@@ -85,9 +85,9 @@ export default function CrearCuenta () {
         </div>
     
  </div>
-        
+       
      <div>
-        <img className="imagen" src="../fotos/chatbot.png"/>
+        <img className="imagen" src="/fotos/chatbot.png" alt="" />
          </div> 
 </>
 )}
