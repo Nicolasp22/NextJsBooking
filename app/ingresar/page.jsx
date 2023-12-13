@@ -20,7 +20,7 @@ export default function Ingresar () {
         </label>
     </div>
         <div className="recupero">
-        <a className="recupero" href="al">¿Olvidaste tu contraseña?</a>
+        <Link className="recupero" href="./recupero">¿Olvidaste tu contraseña? </Link> 
     </div>
     <div className="boton">
         <input id="boton" className="boton" type="submit" value="Ingresar"/> </div>

@@ -1,0 +1,213 @@
+:root
+{
+    --violet: rgb(77, 56, 83);
+}
+html
+{
+    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), url(/fotos/fondo.jpg);
+    background-position:center;
+}
+body
+{
+    font-family: Montserrat, sans-serif;
+}
+.empresa
+{
+    text-align: left;
+    font-size: 25px;
+    margin-left: 15px;
+    margin-top: 20px;
+    
+}
+.contenido
+{
+    position: relative;
+    height: 300px;
+    width: 600px;
+    justify-content: center;
+    border-radius: 15px;
+    background-color: var(--violet);
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 100px;
+    
+    
+}
+
+.subtitulos
+{
+    padding: 45px;
+    text-align: center;
+    color: white;
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.mail
+{
+    position: absolute;
+    width: 500px;
+    height: 45px;
+    border-radius: 5px;
+    border-style: none;
+    top: 100px;
+    left: 45px;
+
+}
+.mail::placeholder
+{
+    position: absolute;
+    font-size: 15px;
+    left: 10px;
+    font-style: oblique;
+}
+.recuperar
+{
+    position: absolute;
+    padding: 5px;
+    width: 500px;
+    height: 45px;
+    border-radius: 25px;
+    background-color: rgb(66, 179, 66);
+    border-style: none;
+    color: white;
+    font-weight: 700;
+    font-family: Montserrat, sans-serif;
+    font-size: 17px;
+    left: 45px;
+    top: 160px;
+
+}
+.recuperar:hover
+{
+    background-color:  rgb(87, 38, 131);
+    cursor: pointer;
+}
+.volver
+{
+    position: absolute;
+    width: fit-content;
+    height: fit-content;
+    border-style: none;
+    color: white;
+    font-weight: 400;
+    font-family: Montserrat, sans-serif;
+    font-size: 15px;
+    left: 175px;
+    top: 270px;
+
+}
+.volver:hover
+{
+    cursor: pointer;
+
+}
+.p
+{
+    position: absolute;
+    width: 50px;
+    left: 100px;
+    bottom: 0.1px;
+    text-decoration:underline white;
+}
+.imagen
+{
+    position: absolute;
+    width: 100px;
+    height: 100px;
+    opacity: 0.8;
+    margin-left: 90%;
+    bottom: 5%;
+
+    transition: transform 0.5s;
+    transition: transform 1s;
+    animation-duration: 1s;
+}
+.imagen:hover
+{
+    transform: scale(1.2);
+    transform: rotate(30deg);
+    cursor: pointer;
+}
+
+@media screen and (max-width: 1280px) {
+    .imagen{
+        right: 5%;
+    }
+    
+    
+    }
+
+
+
+
+@media screen and (max-width: 1024px) {
+.imagen{
+    right: 5%;
+}
+
+
+}
+
+@media screen and (max-width: 768px) {
+    .contenido{
+        height: 300px;
+        width: 500px;
+    }
+    .mail{
+        left: 50px;
+        width: 400px;
+        height: 45px;
+    }
+    .recuperar{
+        left: 50px;
+        width: 400px;
+        height: 45px;
+    }
+    .volver{
+        left: 130px;
+    }
+    .imagen{
+        right: 5%;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+
+@media screen and (max-width: 460px) {
+    .contenido{
+        height: 300px;
+        width: 400px;
+    }
+    .mail{
+        left: 20px;
+        width: 350px;
+        height: 45px;
+    }
+    .recuperar{
+        left: 20px;
+        width: 350px;
+        height: 45px;
+    }
+    .volver{
+        left: 75px;
+    }
+    .imagen{
+        right: 5%;
+        width: 70px;
+        height: 70px;
+    }
+}
+
+
+/* 
+Tamaños de pantalla estandar:
+- 1660px escritorio gama media
+- 1280px escritorio gama baja
+- 1024px tablet en landscape
+- 768px tablet en portrait
+- 480px telefonos generico
+- 340px telefonos muy peques
+*/
