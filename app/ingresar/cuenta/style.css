@@ -5,8 +5,39 @@ html
     url(/fotos/fondo.jpg);
     background-position:center;
 }
-
-h1
-{
-   text-align: center;
+body {
+    padding: 0;
+    margin: 0;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 0px;
+    background-color: white;
+  
+}
+.networking{
+    margin-left: 35px;
+}
+.networking:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+.nosotros{
+    margin-left: 650px;
+}
+.nosotros:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+.productos:hover {
+  color: aquamarine;
+  cursor: pointer;
+}
+.micuenta {
+    margin-right: 15px;
+}
+.micuenta:hover {
+color: aquamarine;
+    cursor: pointer;
 }

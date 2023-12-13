@@ -4,10 +4,13 @@ import "./style.css"
 
 export default function Gracias () {
     return(
-        <h1>Gracias por crear una cuenta en nuestro sitio puede ingresar a la misma desde 
-            <Link href="../ingresar"></Link> 
-
-
+        <> 
+        <div className="gracias"> 
+        <h1>Gracias por crear una cuenta en nuestro sitio puede ingresar a la misma desde: 
+           <Link href="../ingresar" className="link">Ingresar</Link> 
+           
         </h1>
+        </div>
+        </>
     )
 }
