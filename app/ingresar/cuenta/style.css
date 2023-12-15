@@ -4,6 +4,7 @@ html
     background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
     url(/fotos/fondo.jpg);
     background-position:center;
+    
 }
 body {
     padding: 0;
@@ -51,128 +52,167 @@ color: aquamarine;
     margin-left: 50px;
     margin-top: 200px;
 }
-.casa1 {
-    aspect-ratio: 30 / 15;
+
+.casa1
+{
     display: flex;
     width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: auto;
-    margin-bottom: 50px;
-}
+    height: 350px;
+    margin-bottom: 45px;
 
+}
 .casa1 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    animation: forwards;
-    transition: 2s;
-}
-.casa1 img:hover {
-    cursor:not-allowed;
-    
-}
-.casa2 {
-    aspect-ratio: 30 / 15;
-    display: flex;
-    width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: x mandatory;
-    margin-bottom: 50px;
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
+
+.casa1 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+.casa2
+{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 45px;
+
+}
 .casa2 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
-.casa3 {
-    aspect-ratio: 30 / 15;
+
+.casa2 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+.casa3
+{
     display: flex;
     width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type:proximity;
-    margin-bottom: 50px;
-}
+    height: 350px;
+    margin-bottom: 45px;
 
+}
 .casa3 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    animation: forwards;
-    transition: 2s;
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
-.casa4 {
-    aspect-ratio: 30 / 15;
+
+.casa3 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+.casa4
+{
     display: flex;
     width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: auto;
-    
-}
+    height: 350px;
+    margin-bottom: 45px;
 
+}
 .casa4 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
-    animation: forwards;
-    transition: 2s;
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
-.mansion1 {
-    aspect-ratio: 25 / 15;
+
+.casa4 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+/*
+.titulom1
+{
+    position: absolute;
+    bottom: -470px;
+   
+}
+*/
+.mansion1
+{
     display: flex;
     width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: auto;
-    
-}
+    height: 350px;
+    margin-bottom: 45px;
 
+}
 .mansion1 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+.mansion1 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
 
 }
 
-.mansion2 {
-    aspect-ratio: 25 / 15;
+
+.mansion2
+{
     display: flex;
     width: 600px;
-    position: relative;
-    overflow-x: scroll;
-    scroll-snap-type: auto;
-    
+    height: 350px;
+    margin-bottom: 45px;
+
+}
+.mansion2 img {
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
 }
 
-.mansion2 img {
-    width: 100%;
-    left: 0;
-    position: sticky;
-    object-fit: cover;
-    border-radius: 10px;
-    scroll-snap-align: center;
+
+.mansion2 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
 
 }

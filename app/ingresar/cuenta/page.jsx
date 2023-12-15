@@ -39,14 +39,16 @@ export default function Cuenta () {
     <img src="../depto3/pileta.webp" alt="" />
 </div>
 <div className="casa4">
-    <img src="../depto4/estar.webp" alt="" />
-    <img src="../depto4/cocina.webp" alt="" />
-    <img src="../depto4/habitacion.webp" alt="" />
+    <img id="1" src="../depto4/estar.webp" alt="" />
+    <img id="2" src="../depto4/cocina.webp" alt="" />
+    <img id="3" src="../depto4/habitacion.webp" alt="" />
     <img src="../depto4/camas dobles.webp" alt="" />
     <img src="../depto4/balcon.webp" alt="" />
     <img src="../depto4/pileta.webp" alt="" />
 </div>
+
 <div className="mansion1">
+{/* <p className="titulom1">Mansion ubicada en </p>  */}
     <img src="../mansion1/frente.webp" alt="" />
     <img src="../mansion1/otra.webp" alt="" />
     <img src="../mansion1/cocina.webp" alt="" />
@@ -58,12 +60,13 @@ export default function Cuenta () {
 </div>
 <div className="mansion2">
     <img src="../mansion2/frente.webp" alt="" />
-    <img src="../mansion2/comedor.webp" alt="" />
-    <img src="../mansion2/comedor2.webp" alt="" />
+    <img src="../mansion2/habitacion.webp" alt="" />
     <img src="../mansion2/cocina.webp" alt="" />
+    <img src="../mansion2/comedor.webp" alt="" />
     <img src="../mansion2/pool.webp" alt="" />
     <img src="../mansion2/spa.webp" alt="" />
-    <img src="../mansion2/habitacion.webp" alt="" />
+    <img src="../mansion2/comedor2.webp" alt="" />
+    
 </div>
        </div>
 
