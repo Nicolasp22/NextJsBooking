@@ -36,7 +36,7 @@ export default function Ingresar () {
         <input type="hidden" name="form-name" value="formulario"/>
     </form>
       </div>
-        <Link className="crear" href="http://localhost:3000/"> 
+        <Link className="crear" href="https://tpconnextjs.netlify.app/"> 
         ¿No tenes cuenta? ¡Crea una gratis!</Link>
         <img className="imagen" src="../fotos/chatbot.png"/>
         </> 

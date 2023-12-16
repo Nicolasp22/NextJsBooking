@@ -1,6 +1,6 @@
 import "./style.css"
 import Link from "next/link" 
-
+import Maps from "./api"
 
 export default function Cuenta () {
     return(
