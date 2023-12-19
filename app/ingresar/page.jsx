@@ -6,7 +6,7 @@ export default function Ingresar () {
      return (
         <> 
 <form action="./cuenta" 
-        name="ingreso" hidden 
+        name="ingresar" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
 <input id="mail" name="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>
 <input id="psw" name="psw" className="psw" type="password" placeholder="Contraseña" required autoComplete="current-password"/>
@@ -32,8 +32,9 @@ export default function Ingresar () {
         <Link className="recupero" href="./recupero">¿Olvidaste tu contraseña? </Link> 
     </div>
     <div className="boton">
+        <input type="hidden" name="form-name" value="ingresar"/>
         <input id="boton" className="boton" type="submit" value="Ingresar"/> </div>
-        <input type="hidden" name="form-name" value="formulario"/>
+        
     </form>
       </div>
         <Link className="crear" href="https://tpconnextjs.netlify.app/"> 

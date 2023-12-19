@@ -1,6 +1,10 @@
 import "./style.css"
-import Link from "next/link" 
-import Maps from "./api"
+// import Link from "next/link" 
+// import Mostrar from "../api/page"
+// import Dolar from "./function" 
+
+// import { useState } from "react"; 
+
 
 export default function Cuenta () {
     return(
@@ -8,13 +12,15 @@ export default function Cuenta () {
        <div className="nav">
  <h2 className="networking">Networking</h2>
  <h2 className="nosotros">Nosotros</h2>
- <button className="productos">Productos</button>
-  <dialog id="favDialog"> 
+ <h2 id="productos" className="productos">Productos </h2>
+  <div id="favDialog"> 
   <li className="">Deptos</li>
   <li className="">Mansiones</li>
-  </dialog>
+  </div>
  <h2 className="micuenta">Mi cuenta</h2>
        </div>
+
+{/* <Dolar/>        */}
        <div className="casas"> 
 <div className="casa1">
     <img src="../depto1/frente.webp" alt="" />
@@ -23,6 +29,7 @@ export default function Cuenta () {
     <img src="../depto1/pileta.webp" alt="" />
     <img src="../depto1/pileta2.webp" alt="" />
 </div>
+
 <div className="casa2">
     <img src="../depto2/living.webp" alt="" />
     <img src="../depto2/muebles.webp" alt="" />
@@ -30,6 +37,7 @@ export default function Cuenta () {
     <img src="../depto2/cama.webp" alt="" />
     <img src="../depto2/pileta.webp" alt="" />
 </div>
+
 <div className="casa3">
     <img src="../depto3/frente.webp" alt="" />
     <img src="../depto3/cocina.webp" alt="" />
@@ -38,6 +46,7 @@ export default function Cuenta () {
     <img src="../depto3/muebles.webp" alt="" />
     <img src="../depto3/pileta.webp" alt="" />
 </div>
+
 <div className="casa4">
     <img id="1" src="../depto4/estar.webp" alt="" />
     <img id="2" src="../depto4/cocina.webp" alt="" />
@@ -58,6 +67,7 @@ export default function Cuenta () {
     <img src="../mansion1/habitacion.webp" alt="" />
     <img src="../mansion1/camas dobles.webp" alt="" />
 </div>
+
 <div className="mansion2">
     <img src="../mansion2/frente.webp" alt="" />
     <img src="../mansion2/habitacion.webp" alt="" />
@@ -69,8 +79,6 @@ export default function Cuenta () {
     
 </div>
        </div>
-
-
 
         </>
     )

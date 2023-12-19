@@ -31,6 +31,12 @@ body {
     color: aquamarine;
     cursor: pointer;
 }
+
+#favDialog
+{
+    display: none;
+}
+
 .productos:hover {
   color: aquamarine;
   cursor: pointer;
