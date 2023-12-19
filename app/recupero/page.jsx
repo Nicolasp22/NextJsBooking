@@ -19,7 +19,7 @@ export default function Recupero () {
      Recuperá tu contraseña
        </div>
         <div class="formulario">
-   <form method="post" name="recuperar"> 
+   <form method="post"> 
  <div>
     <label>
         <input class="mail" type="email" placeholder="Tu Mail" required autocomplete="email"/>
@@ -29,7 +29,7 @@ export default function Recupero () {
  <div>  
     <label class="">
         <input class="recuperar" name="recupero" type="submit" value="Recuperar"/>
-        <input type="hidden" name="form-name" value="formulario"/>
+        <input type="hidden" name="form-name" value="recuperar"/>
     </label>
  </div>     
     

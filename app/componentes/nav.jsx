@@ -11,7 +11,7 @@ export default function CrearCuenta () {
         </div>
         <form  
         action="./componentes/gracias" 
-        name="crearCuenta" hidden 
+        name="formulario" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
         <input type="text" name="nombre"/>
         <input type="text" name="apellido"/>
