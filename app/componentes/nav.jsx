@@ -75,7 +75,7 @@ export default function CrearCuenta () {
 
             <div>
                 <label className="boton">
-                    <input type="hidden" name="crearCuenta" value="formulario"/>
+                    <input type="hidden" name="form-name" value="formulario"/>
                     <input className="" type="submit" name="Registrarme" value="Registrarme" />
                 </label></div> 
             </form>
