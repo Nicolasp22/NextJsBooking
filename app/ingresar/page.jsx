@@ -5,7 +5,7 @@ import Link from "next/link"
 export default function Ingresar () {
      return (
         <> 
-<form action="./cuenta" 
+<form action="./ingresar/cuenta"
         name="ingresar" hidden 
         data-netlify="true" netlify-honeypot="bot-field">
 <input id="mail" name="mail" className="mail" type="email" placeholder="Email" required autoComplete="email"/>
