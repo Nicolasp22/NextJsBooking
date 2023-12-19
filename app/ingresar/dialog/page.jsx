@@ -1,4 +1,5 @@
-import Dolar from "../cuenta/function"
+
+// import Dolar from "../cuenta/function"
 
 
 
@@ -6,7 +7,8 @@ export default function Dialog () {
     
   return(
     <>
-    <Dolar/>
+    <h1>Hola </h1>
     </>
 )
 }
+

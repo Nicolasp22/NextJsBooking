@@ -1,6 +1,6 @@
 // import React, { useState, useEffect } from 'react'; 
 // "use client";
-
+/*
 export default function Dolar () {
     const ApiData = () => {
         const [data, setData] = useState(null);
@@ -30,3 +30,4 @@ export default function Dolar () {
       };
     
 }
+*/

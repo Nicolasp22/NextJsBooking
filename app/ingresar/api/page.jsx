@@ -1,6 +1,8 @@
 // import Cuenta from "../cuenta/page";
+"use client";
 import "./api.css"
 import { useState, useEffect } from "react";
+
 
 export default function Dolar () { 
   const [cargando, setCargando] = useState(true);
