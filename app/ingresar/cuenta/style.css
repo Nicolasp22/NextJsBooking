@@ -24,23 +24,93 @@ body {
     color: aquamarine;
     cursor: pointer;
 }
-.nosotros{
+
+.nos {
+    text-decoration: none;
+    color: black;
     margin-left: 650px;
 }
-.nosotros:hover {
+.nos:hover {
     color: aquamarine;
     cursor: pointer;
 }
 
-#favDialog
+.hi, 
+.ho,
+.cierre,
+.lista-productos,
+.lista-cuenta,
+.cierre2
+
 {
-    display: none;
+    visibility: hidden;
+    
+    
+}
+#link1,
+#link2,
+#link3, 
+#link4
+{
+    text-decoration: none;
+    color: black;
+    
+    
+}
+#link1:hover,
+#link2:hover,
+#link3:hover,
+#link4:hover {
+    color: aquamarine;
+    cursor: pointer;
+}
+.listas {
+    display: flex;
+    /* margin-left: 1030px;  */
+    justify-content: end;
+    gap: 25px;
 }
 
-.productos:hover {
-  color: aquamarine;
-  cursor: pointer;
+.lista-productos {
+    display: grid;
+    text-align: center;
+    
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    width: 150px;
+    height: 130px;
+    background-color: white;
+    
+   
 }
+.lista-productos div,
+.lista-cuenta div
+{
+    padding: 5px;
+}
+.lista-cuenta{
+    display: grid;
+    text-align: center;
+    margin-right: 0;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    width: 150px;
+    height: 130px;
+    background-color: white;
+}
+.cierre:hover,
+.cierre2:hover
+{
+    color: aquamarine;
+    cursor: pointer;
+}
+
+
+.productos:hover {
+    color: aquamarine;
+    cursor: pointer;
+  }
+
 .micuenta {
     margin-right: 15px;
 }

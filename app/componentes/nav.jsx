@@ -1,10 +1,15 @@
+"use client";
 import "./style.css"
 import Link from "next/link"
 
 
 export default function CrearCuenta () {
+    
+    
+
     return(
         <>
+         
         <div className="empresa">Networking</div>
         <div className="subtitulo">
             Crear Cuenta
