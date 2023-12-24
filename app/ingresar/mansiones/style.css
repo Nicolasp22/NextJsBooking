@@ -66,15 +66,20 @@ body {
     
     
 }
-/*
-#link1:hover,
-#link2:hover,
-#link3:hover,
-#link4:hover {
-    color: var(--verde);
-    cursor: pointer;
+
+.hi:hover,
+.ho:hover,
+.cierre:hover,
+.perfil:hover,
+.conf:hover,
+.cierre2:hover
+{
+    background-color: var(--verde);
+    cursor: pointer; 
+   
 }
-*/
+
+
 .listas {
     display: flex;
     /* margin-left: 1030px;  */
@@ -110,22 +115,12 @@ body {
     background-color: white;
 }
 
+
+
 .productos:hover {
     color: var(--verde);
     cursor: pointer;
   }
-
-.hi:hover,
-.ho:hover,
-.cierre:hover,
-.perfil:hover,
-.conf:hover,
-.cierre2:hover
-{
-    background-color: var(--verde);
-    cursor: pointer; 
-}
-
 
 .micuenta {
     margin-right: 15px;
@@ -133,4 +128,120 @@ body {
 .micuenta:hover {
     color: var(--verde);
     cursor: pointer;
+}
+
+
+.mansiones
+{
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: auto auto auto auto;
+    gap: 20px;
+    margin-left: 50px;
+    margin-top: 200px;
+}
+
+.mansion1
+{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 45px;
+
+}
+.mansion1 img {
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+.mansion1 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+
+.mansion2
+{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 45px;
+
+}
+.mansion2 img {
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+.mansion2 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+.mansion3
+{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 45px;
+
+}
+.mansion3 img {
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+.mansion3 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
+}
+
+.mansion4
+{
+    display: flex;
+    width: 600px;
+    height: 350px;
+    margin-bottom: 45px;
+
+}
+.mansion4 img {
+    width: 0;
+    flex-grow: 1;
+    object-fit:cover;
+    transition: 1.5s ease-out;
+    transition-delay: 0.3s;
+    border: 1px solid black;
+    border-radius: 7px;
+}
+
+
+.mansion4 img:hover
+{
+    cursor: zoom-in;
+    width: 500px;
+
 }
