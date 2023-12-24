@@ -57,12 +57,14 @@ export default function Cuenta () {
 
 
    <div className="lista-productos"> 
-  <div className="hi">
+  <div className="hi"> 
     <img src="../iconos/building.svg" alt="" />
-    <Link id="link1" href="./departamentos">Departamentos</Link> </div>
+    <Link id="link1" href="./departamentos">Departamentos</Link>
+     </div>
   <div className="ho">
     <img src="../iconos/houses.svg" alt="" />
-    <Link id="link2" href="./mansiones">Mansiones</Link> </div>
+    <Link id="link2" href="./mansiones">Mansiones</Link> 
+    </div> 
   <div className="cierre" onClick={cerrar}> Cerrar </div>
    </div>
 

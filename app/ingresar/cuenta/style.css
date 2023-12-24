@@ -66,15 +66,7 @@ body {
     
     
 }
-/*
-#link1:hover,
-#link2:hover,
-#link3:hover,
-#link4:hover {
-    color: var(--verde);
-    cursor: pointer;
-}
-*/
+
 .listas {
     display: flex;
     /* margin-left: 1030px;  */
@@ -122,6 +114,7 @@ body {
 .conf:hover,
 .cierre2:hover
 {
+   
     background-color: var(--verde);
     cursor: pointer; 
 }
