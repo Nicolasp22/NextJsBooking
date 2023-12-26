@@ -4,6 +4,8 @@
     --verde: rgb(66, 179, 66);
     --verde_oscuro: rgb(2, 59, 2);
     --borde: rgb(35, 4, 41);
+    --azul_acero: rgb(20,130,180); 
+    --gris: rgba(49, 39, 39, 0.26);
 }
 html
 {

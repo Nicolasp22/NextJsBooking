@@ -193,11 +193,11 @@ body {
     font-family: Montserrat, sans-serif;
     transition: transform 0.5s;
     animation-duration: 2s;
-    margin-top: 30px;
+    margin-top: 10px;
     margin-left: 25%;
     margin-right: 25%;
 }
-
+ 
 .boton:hover
 {
     transform: scale(1.25);

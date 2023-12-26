@@ -81,7 +81,7 @@ export default function Departamentos () {
 
 <div className="casas"> 
 <div> 
-     <h1 className="titulo">Casa1  </h1> 
+     <h1 className="titulo">Habitación en Honolulu Hawái, Estados Unidos  </h1> 
      <div className="casa1">
     <img src="../depto1/frente.webp" alt="" />
     <img src="../depto1/cama.jpg" alt="" />
@@ -89,11 +89,14 @@ export default function Departamentos () {
     <img src="../depto1/pileta.webp" alt="" />
     <img src="../depto1/pileta2.webp" alt="" />   
     </div>
-    <p className="descripcion1">Desc</p>
+<p className="descripcion1">Este hermoso condominio totalmente renovado ubicado en Waikiki - Oceanfront cuenta con materiales de primera calidad como mostrador de granito, equipo de acero inoxidable, TV y DVD, escritorio de trabajo con Internet, refrigerador, estufa, horno, horno microondas.
+Y los mejores lugares, lugares, lugares. Esta unidad puede ver el mar directamente desde la colina del piso 21. El condominio de 500 pies cuadrados con una enorme terraza de 120 pies cuadrados tiene muebles de lujo, de estilo moderno. El condominio tiene sistema de aire acondicionado dividido, Internet de alta velocidad gratuita, TV por cable y servicio telefónico gratuito a todos los EE. UU. y Canadá.
+ </p>
+    <button className="boton">Comprar por $500.000</button>
 </div>
 
 <div>  
-    <h1 className="titulo">Casa2</h1>  
+    <h1 className="titulo">Estudio Penthouse East 50s with Roof Terrace</h1>  
     <div className="casa2">
     <img src="../depto2/living.webp" alt="" />
     <img src="../depto2/muebles.webp" alt="" />
@@ -101,11 +104,14 @@ export default function Departamentos () {
     <img src="../depto2/cama.webp" alt="" />
     <img src="../depto2/pileta.webp" alt="" />
     </div>
-    <p className="descripcion1">Desc</p>
+<p className="descripcion1">Este es un estudio totalmente amueblado en el ático del sexto piso de un edificio con ascensor en el corazón del centro de Manhattan. La terraza de la azotea de las fotos es exclusiva del alojamiento. 
+El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantadora habitación de hotel privada con baño de mármol. Dormirás profundamente con un colchón de espuma viscoelástica, ventanas de dos plazas, ventilador de techo y un excelente aire acondicionado y calefacción, controlado por ti. Hay café y té, pero no cocina ni utensilios de cocina. Dicho esto, ¡no necesitas cocina cuando algunos de los mejores alimentos del mundo están justo afuera de la puerta!
+</p>
+    <button className="boton">Comprar por $500.000</button>
 </div>
 
 <div> 
-    <h1 className="titulo">Casa3</h1> 
+    <h1 className="titulo">Habitación en Mackinac Island, Míchigan, Estados Unidos</h1> 
     <div className="casa3">
     <img src="../depto3/frente.webp" alt="" />
     <img src="../depto3/cocina.webp" alt="" />
@@ -114,11 +120,13 @@ export default function Departamentos () {
     <img src="../depto3/muebles.webp" alt="" />
     <img src="../depto3/pileta.webp" alt="" />
     </div>
-    <p className="descripcion2">Desc</p>
+<p className="descripcion2">Applewood 204 está muy bien equipada, habitación del segundo piso con excelentes vistas diurnas y nocturnas del estrecho de Mackinac y el puente Mackinac. Ubicado a dos millas de la ciudad en el lado oeste de la isla, estás estratégicamente posicionado para terminar el día viendo la puesta de sol, las estrellas salen y las luces brillan en el puente Mackinac y al otro lado del agua en Saint Ignace, todo desde la comodidad del apartamento.
+Equipado con una cama tamaño king de hierro forjado, baño completo, mininevera, microondas, cafetera y wifi.</p>
+    <button className="boton">Comprar por $500.000</button>
 </div>
 
 <div> 
-    <h1 className="titulo">Casa4</h1> 
+    <h1 className="titulo">Habitación en Knoxville Tennessee, Estados Unidos</h1> 
     <div className="casa4"> 
     <img id="1" src="../depto4/estar.webp" alt="" />
     <img id="2" src="../depto4/cocina.webp" alt="" />
@@ -127,9 +135,12 @@ export default function Departamentos () {
     <img src="../depto4/balcon.webp" alt="" />
     <img src="../depto4/pileta.webp" alt="" />
     </div>
-    <p className="descripcion2">Desc</p>
+<p className="descripcion2">
+Habitación privada ubicada en una casa adosada de 3 dormitorios y 1,5 baños ubicada en el histórico Knoxville del Norte. Conveniente a 4th y a Gill, a Happy Holler, y a la zona céntrica Knoxville. Este dormitorio privado tiene una puerta de bloqueo, cama completa, televisión y espacio de trabajo. Los espacios compartidos incluyen sala de estar, cocina, 1,5 baños. La casa está equipada con una cocina totalmente equipada, wifi, sala de estar, estacionamiento en el lugar, y también se proporciona café. Hay lavandería de pago disponible para todos los huéspedes.
+</p>
+    <button className="boton">Comprar por $500.000</button>
 </div>
        </div>
         </>
     )
-}
+} 

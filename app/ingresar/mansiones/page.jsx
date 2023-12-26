@@ -77,15 +77,6 @@ export default function Mansiones () {
 
 </div>
 {/* Hasta aca cabecera */}
-
-{/*
-<div className="titulos">
-<h1 className="titulo1">Glamourous Great Falls Mansion  </h1>
-<h1 className="titulo2">IBB Beach Mansion   </h1>
-<h1 className="titulo3">The Bluegrass Palace</h1>
-<h1 className="titulo4"> Winthrop Estate 12K SF 32 acres  </h1>
-</div>
-*/}
  
 <h1 className="title">Mansiones</h1>
 

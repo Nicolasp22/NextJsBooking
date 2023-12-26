@@ -151,9 +151,34 @@ body {
     
 } 
 
+.boton
+{
+    
+    width: 160px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: var(--verde);
+    border-style:none;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    transition: transform 0.5s;
+    animation-duration: 2s;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+  
+.boton:hover
+{
+    transform: scale(1.25);
+    cursor: pointer;
+}
 
 .descripcion1{
-    height: 250px;
+    height: 200px;
     width: 600px;
     text-align: justify;
     font-weight: 600;
@@ -161,7 +186,7 @@ body {
 }  
 
 .descripcion2{
-    height: 250px;
+    height: 200px;
     width: 600px;
     text-align: justify;
     font-weight: 600;
@@ -173,9 +198,9 @@ body {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto;
-    gap: 20px;
+    gap: 10px 40px;
     margin-left: 50px;
-    margin-top: 100px;
+    margin-top: 0;
 }
 
 .casa1
@@ -183,7 +208,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 
 }
 
@@ -210,7 +235,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 
 }
 .casa2 img {
@@ -236,8 +261,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-top: 45px;
-    margin-bottom: 50px;
+    margin-bottom: 10px;
 
 }
 .casa3 img {
@@ -263,7 +287,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-top: 45px;
+    margin-bottom: 10px;
 
 }
 .casa4 img {
