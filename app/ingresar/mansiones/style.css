@@ -4,18 +4,24 @@
     --borde: rgb(35, 4, 41);
     --verde: rgb(66, 179, 66);
     --verde_oscuro: rgb(2, 59, 2);
+    --azul_acero: rgb(20,130,180); 
+    --gris: rgba(49, 39, 39, 0.26);
     --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
 }
 
 html
 {
     font-family: Montserrat, sans-serif;
+    /*
     background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
     url(/fotos/fondo.jpg);
-    background-position:center;
+    background-position:center; 
+    */
+    background-color: var(--azul_acero);
     
 }
 body {
+   
     padding: 0;
     margin: 0;
 }
@@ -24,13 +30,13 @@ body {
     justify-content: space-between;
     padding: 0px;
     background-color: white;
-  
+    
 }
 .networking{
     margin-left: 35px;
 }
 .networking:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -40,7 +46,7 @@ body {
     margin-left: 650px;
 }
 .nos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -74,7 +80,7 @@ body {
 .conf:hover,
 .cierre2:hover
 {
-    background-color: var(--verde);
+    background-color: var(--gris);
     cursor: pointer; 
    
 }
@@ -118,7 +124,7 @@ body {
 
 
 .productos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
   }
 
@@ -126,19 +132,87 @@ body {
     margin-right: 15px;
 }
 .micuenta:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
+
+/* Hasta aca la navegacion */
+
+
+.title{
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 40px;
+    text-decoration: underline;
+    
+}
+
+.titulo1,
+.titulo2,
+.titulo3, .titulo4 
+{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+}
+
+.descripcion1, .descripcion2{
+    height: 250px;
+    width: 600px;
+    text-align: justify;
+    font-weight: 600;
+    font-style: oblique;
+    
+}
+.descripcion3, .descripcion4{
+    width: 600px;
+    height: 150px; 
+    text-align: justify;
+    font-weight: 600;
+    font-style: oblique;
+    /* margin-bottom: 30px; */
+    
+}
+
+.boton
+{
+    
+    width: 160px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: var(--verde);
+    border-style:none;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    transition: transform 0.5s;
+    animation-duration: 2s;
+    margin-top: 30px;
+    margin-left: 25%;
+    margin-right: 25%;
+}
+
+.boton:hover
+{
+    transform: scale(1.25);
+    cursor: pointer;
+}
 
 .mansiones
 {
     display: grid;
     grid-template-columns: auto auto;
     grid-template-rows: auto auto auto auto;
-    gap: 20px;
+    gap: 100px 40px;
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 0px;
+   
 }
 
 .mansion1
@@ -146,7 +220,8 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
+    
 
 }
 .mansion1 img {
@@ -173,7 +248,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-bottom: 10px;
 
 }
 .mansion2 img {
@@ -199,8 +274,8 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
-
+    margin-top: 45px;
+    margin-bottom: 10px;
 }
 .mansion3 img {
     width: 0;
@@ -225,8 +300,8 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
-
+    margin-top: 45px;
+    margin-bottom: 10px;
 }
 .mansion4 img {
     width: 0;

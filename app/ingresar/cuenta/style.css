@@ -4,15 +4,15 @@
     --borde: rgb(35, 4, 41);
     --verde: rgb(66, 179, 66);
     --verde_oscuro: rgb(2, 59, 2);
+    --azul_acero: rgb(20,130,180); 
+    --gris: rgba(49, 39, 39, 0.26);
     --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
 }
 
 html
 {
     font-family: Montserrat, sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
-    url(/fotos/fondo.jpg);
-    background-position:center;
+    background-color: var(--azul_acero);
     
 }
 body {
@@ -30,7 +30,7 @@ body {
     margin-left: 35px;
 }
 .networking:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -40,7 +40,7 @@ body {
     margin-left: 650px;
 }
 .nos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -103,7 +103,7 @@ body {
 }
 
 .productos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
   }
 
@@ -115,7 +115,7 @@ body {
 .cierre2:hover
 {
    
-    background-color: var(--verde);
+    background-color: var(--gris);
     cursor: pointer; 
 }
 
@@ -124,6 +124,6 @@ body {
     margin-right: 15px;
 }
 .micuenta:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }

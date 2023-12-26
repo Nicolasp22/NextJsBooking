@@ -76,40 +76,58 @@ export default function Departamentos () {
 </div>
 {/* Hasta aca cabecera */}
 
+<h1 className="title">Departamentos</h1>
+
 
 <div className="casas"> 
-<div className="casa1">
+<div> 
+     <h1 className="titulo">Casa1  </h1> 
+     <div className="casa1">
     <img src="../depto1/frente.webp" alt="" />
     <img src="../depto1/cama.jpg" alt="" />
     <img src="../depto1/cocina.webp" alt="" />
     <img src="../depto1/pileta.webp" alt="" />
-    <img src="../depto1/pileta2.webp" alt="" />
+    <img src="../depto1/pileta2.webp" alt="" />   
+    </div>
+    <p className="descripcion1">Desc</p>
 </div>
 
-<div className="casa2">
+<div>  
+    <h1 className="titulo">Casa2</h1>  
+    <div className="casa2">
     <img src="../depto2/living.webp" alt="" />
     <img src="../depto2/muebles.webp" alt="" />
     <img src="../depto2/cocina.webp" alt="" />
     <img src="../depto2/cama.webp" alt="" />
     <img src="../depto2/pileta.webp" alt="" />
+    </div>
+    <p className="descripcion1">Desc</p>
 </div>
 
-<div className="casa3">
+<div> 
+    <h1 className="titulo">Casa3</h1> 
+    <div className="casa3">
     <img src="../depto3/frente.webp" alt="" />
     <img src="../depto3/cocina.webp" alt="" />
     <img src="../depto3/cama.webp" alt="" />
     <img src="../depto3/gym.webp" alt="" />
     <img src="../depto3/muebles.webp" alt="" />
     <img src="../depto3/pileta.webp" alt="" />
+    </div>
+    <p className="descripcion2">Desc</p>
 </div>
 
-<div className="casa4">
+<div> 
+    <h1 className="titulo">Casa4</h1> 
+    <div className="casa4"> 
     <img id="1" src="../depto4/estar.webp" alt="" />
     <img id="2" src="../depto4/cocina.webp" alt="" />
     <img id="3" src="../depto4/habitacion.webp" alt="" />
     <img src="../depto4/camas dobles.webp" alt="" />
     <img src="../depto4/balcon.webp" alt="" />
     <img src="../depto4/pileta.webp" alt="" />
+    </div>
+    <p className="descripcion2">Desc</p>
 </div>
        </div>
         </>

@@ -4,6 +4,8 @@
     --borde: rgb(35, 4, 41);
     --verde: rgb(66, 179, 66);
     --verde_oscuro: rgb(2, 59, 2);
+    --azul_acero: rgb(20,130,180); 
+    --gris: rgba(49, 39, 39, 0.26);
     --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
 }
 
@@ -11,9 +13,7 @@
 html
 {
     font-family: Montserrat, sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
-    url(/fotos/fondo.jpg);
-    background-position:center;
+    background-color: var(--azul_acero);
     
 }
 body {
@@ -31,7 +31,7 @@ body {
     margin-left: 35px;
 }
 .networking:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -41,7 +41,7 @@ body {
     margin-left: 650px;
 }
 .nos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
@@ -63,7 +63,7 @@ body {
 .conf:hover,
 .cierre2:hover
 {
-    background-color: var(--verde);
+    background-color: var(--gris);
     cursor: pointer; 
     
 }
@@ -116,7 +116,7 @@ body {
 
 
 .productos:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
   }
 
@@ -124,13 +124,49 @@ body {
     margin-right: 15px;
 }
 .micuenta:hover {
-    color: var(--verde);
+    color: var(--azul_acero);
     cursor: pointer;
 }
 
+/* Hasta aca la navegacion */
 
 
 
+.title{
+    height: fit-content;
+    margin-top: 0;
+    margin-bottom: 60px;
+    padding: 0;
+    text-align: center;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 35px;
+    text-decoration: underline;
+    
+}
+
+
+.titulo{
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    
+} 
+
+
+.descripcion1{
+    height: 250px;
+    width: 600px;
+    text-align: justify;
+    font-weight: 600;
+    font-style: oblique;
+}  
+
+.descripcion2{
+    height: 250px;
+    width: 600px;
+    text-align: justify;
+    font-weight: 600;
+    font-style: oblique;
+}
 
 .casas
 {
@@ -139,7 +175,7 @@ body {
     grid-template-rows: auto auto;
     gap: 20px;
     margin-left: 50px;
-    margin-top: 200px;
+    margin-top: 100px;
 }
 
 .casa1
@@ -150,6 +186,7 @@ body {
     margin-bottom: 45px;
 
 }
+
 .casa1 img {
     width: 0;
     flex-grow: 1;
@@ -199,7 +236,8 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-top: 45px;
+    margin-bottom: 50px;
 
 }
 .casa3 img {
@@ -225,7 +263,7 @@ body {
     display: flex;
     width: 600px;
     height: 350px;
-    margin-bottom: 45px;
+    margin-top: 45px;
 
 }
 .casa4 img {
