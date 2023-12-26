@@ -45,6 +45,7 @@ export default function Cuenta () {
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
     }    
+    // Navegacion
     let Lista1 = () => { 
       let misDatos1 = document.querySelector("#g1")
       let misDatos2 = document.querySelector("#g2")
@@ -120,6 +121,32 @@ export default function Cuenta () {
       misDatos1.style.display = "none";
       misDatos2.style.display = "none";
     }
+// Listas
+  function funciones1(){
+      Lista1();
+      Lista2Cierre();
+      Lista3Cierre();
+      Lista4Cierre();
+  }
+  function funciones2(){
+    Lista2();
+    Lista1Cierre();
+    Lista3Cierre();
+    Lista4Cierre();
+  }
+  function funciones3(){
+    Lista3();
+    Lista1Cierre();
+    Lista2Cierre();
+    Lista4Cierre();
+  }
+  function funciones4(){
+    Lista4();
+    Lista1Cierre();
+    Lista2Cierre();
+    Lista3Cierre();
+  }
+// Agrupacion de listas
 
            return(
         <>
@@ -159,7 +186,7 @@ export default function Cuenta () {
   <h1 id="perfil">Mi perfil</h1>
   <div className="datos">
 
-    <div id="g" onClick={Lista1}>Mis datos personales </div>
+    <div id="g" onClick={funciones1}>Mis datos personales </div>
     <div className="lista1"> 
 <input type="text" id="g1" placeholder="Tu nombre"/>
 <input type="text" id="g2" placeholder="Tu apellido"/>
@@ -171,14 +198,14 @@ export default function Cuenta () {
     {/* <input type="button" id="g6" value="Guardar" onClick={Lista1Cierre} /> */}
 
 
-    <div id="b" onClick={Lista2}>Cupones </div> 
+    <div id="b" onClick={funciones2}>Cupones </div> 
 <div className="lista2">
 <input id="b1" type="text" placeholder="Ingresa un cupon aquí"/>   
 <button id="b2" onClick={Lista2Cierre}>Guardar</button>  
 </div> 
     
 
-    <div id="c" onClick={Lista3}>Cuentas Bancarias </div>
+    <div id="c" onClick={funciones3}>Cuentas Bancarias </div>
 <div className="lista3"> 
 <input id="c1" type="text" placeholder="Nombre del banco"/>
 <input id="c2" type="text" placeholder="Tu CBU"/>
@@ -186,7 +213,7 @@ export default function Cuenta () {
 </div>
    
 
-    <div id="d" onClick={Lista4}>Idioma </div>
+    <div id="d" onClick={funciones4}>Idioma </div>
     <div className="lista4"> 
       <select id="d1" name="idioma">
         <option value="Español">Español</option>
