@@ -178,7 +178,7 @@ export default function Cuenta () {
     <Link href="./cuenta" id="link3"> Mi perfil </Link> </div>
  <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="g" id="link4"> Configuración </Link> </div>
+    <Link href="./cuenta" id="link4"> Configuración </Link> </div>
  <div className="cierre2" onClick={Cierre}>Cerrar</div>
    </div>
 
@@ -195,7 +195,6 @@ export default function Cuenta () {
 <input type="psw" id="g5" placeholder="N************"/>
 <input type="button" id="g6" value="Guardar" onClick={Lista1Cierre} />
 </div>
-    {/* <input type="button" id="g6" value="Guardar" onClick={Lista1Cierre} /> */}
 
 
     <div id="b" onClick={funciones2}>Cupones </div> 
@@ -216,9 +215,9 @@ export default function Cuenta () {
     <div id="d" onClick={funciones4}>Idioma </div>
     <div className="lista4"> 
       <select id="d1" name="idioma">
-        <option value="Español">Español</option>
-        <option value="Ingles">Ingles</option>
-        <option value="Francés">Francés</option>
+        <option id="es" value="Español">Español</option>
+        <option id="en" value="Ingles">Ingles</option>
+        <option id="fr" value="Francés">Francés</option>
       </select>
       <input id="d2" onClick={Lista4Cierre} type="button" value="Guardar" />
       </div>

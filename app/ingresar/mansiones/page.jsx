@@ -97,7 +97,7 @@ export default function Mansiones () {
     <Link href="./cuenta" id="link3"> Mi perfil </Link> </div>
 <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="g" id="link4"> Configuración </Link> </div>
+    <Link href="./cuenta" id="link4"> Configuración </Link> </div>
 <div className="cierre2" onClick={Cierre} >Cerrar</div>
 </div>
 
@@ -185,13 +185,13 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
 <div className="grilla2"> 
 <h1 className="titulo4"> Winthrop Estate 32 acres  </h1>
 <div className="mansion4">
-    <img src="../mansion4/aereo.webp" alt="" />
-    <img src="../mansion4/frente.webp" alt="" />
-    <img src="../mansion4/comedor.webp" alt="" />
-    <img src="../mansion4/estar.webp" alt="" />
-    <img src="../mansion4/sala.webp" alt="" />
-    <img src="../mansion4/habitacion.webp" alt="" />
-    <img src="../mansion4/habitacion2.webp" alt="" />
+    <img src="../mansion4/aereo.webp" alt="a" />
+    <img src="../mansion4/frente.webp" alt="a" />
+    <img src="../mansion4/comedor.webp" alt="a" />
+    <img src="../mansion4/estar.webp" alt="aa" />
+    <img src="../mansion4/sala.webp" alt="a" />
+    <img src="../mansion4/habitacion.webp" alt="a" />
+    <img src="../mansion4/habitacion2.webp" alt="a" />
     </div>
 <p className="descripcion4"> The Winthrop Estate es una Great Estate registrada construida en 1875 para Henri Braem, Embajador de Estados Unidos en Dinamarca y socio en Cunard Steamship Lines, famosa por la ultra lujosa línea de barcos Queen Mary, entre otras. Braem vendió la finca a la familia Winthrop, descendientes de John Winthrop, el gobernador fundador de Massachusetts, desde donde la finca tomó su nombre actual. La mansión está recién renovada con toques modernos y bien pensados en sus orígenes e incluye servicios de primer nivel. </p>    
 <div className="botones">  

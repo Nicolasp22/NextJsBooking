@@ -70,7 +70,7 @@ body {
 .listas {
     display: flex;
     /* margin-left: 1030px;  */
-    justify-content: end;
+    justify-content: flex-end;
     gap: 25px;
     height: 40px;
 }
@@ -147,7 +147,7 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
     gap: 20px;
-    margin-left: 20px;
+    margin-left: 40px;
     text-decoration: underline;
 }
 #g, #b, #c, #d{
@@ -182,9 +182,8 @@ body {
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto auto auto auto;
-    margin-left: 300px;
+    margin-left: 400px;
     
-
 }
 #g1, #g2, #g3, #g4, #g5, #g6, #b1, #b2, #c1, #c2, #c3{
     margin-top: 10px;
