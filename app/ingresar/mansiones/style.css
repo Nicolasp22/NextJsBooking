@@ -167,7 +167,8 @@ body {
     text-align: justify;
     font-weight: 600;
     font-style: oblique;
-    
+    margin-bottom: 30px;
+
 }
 .descripcion3, .descripcion4{
     width: 600px;
@@ -175,7 +176,7 @@ body {
     text-align: justify;
     font-weight: 600;
     font-style: oblique;
-    /* margin-bottom: 30px; */
+    margin-bottom: 30px;
     
 }
 
