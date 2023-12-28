@@ -154,7 +154,7 @@ body {
 .boton
 {
     
-    width: 160px;
+    width: 200px;
     height: 45px;
     border-radius: 40px;
     background-color: var(--verde);
@@ -183,6 +183,8 @@ body {
     text-align: justify;
     font-weight: 600;
     font-style: oblique;
+    margin-bottom: 10px;
+
 }  
 
 .descripcion2{
@@ -191,6 +193,7 @@ body {
     text-align: justify;
     font-weight: 600;
     font-style: oblique;
+    margin-bottom: 10px;
 }
 
 .casas
@@ -307,12 +310,54 @@ body {
     width: 500px;
 
 }
-/*
-.titulom1
-{
-    position: absolute;
-    bottom: -470px;
-   
-}
-*/
 
+.grilla2{
+    margin-bottom: 200px;
+}
+
+.botones{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto auto;
+    grid-template-rows: auto;
+    height: 25px;
+    width: 450px;
+    gap: 10px;
+    margin-left: auto;
+    margin-right: auto;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    align-items: center;
+    
+}
+
+.botones button
+{
+    height: 30px;
+    width: 35px;
+    text-align: center;
+    justify-items: center;
+    border-radius: 40px;
+    background-color: var(--verde);
+    border-style:none;
+    color: black;
+    font-weight: 900;
+    align-items: center;
+    
+}
+.botones button:hover{
+    
+    cursor: pointer;
+}
+.botones input{
+    height: 30px;
+    width: fit-content;
+    text-align: center;
+    border-radius: 10px;
+    border-style:none;
+    font-weight: 900;
+  
+}
+.botones input:hover{
+    cursor:pointer;
+    width: fit-content;
+
+}

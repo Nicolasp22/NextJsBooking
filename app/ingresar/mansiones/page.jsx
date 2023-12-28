@@ -1,7 +1,7 @@
 "use client"
 import "./style.css"
 import Link from "next/link"
-
+import { useEffect, useState } from "react";
 
 export default function Mansiones () {
     let menu = () => { 
@@ -43,9 +43,35 @@ export default function Mansiones () {
         ca.style.visibility = "hidden";
     }  
 
+    let Comprar1 = () => {
+        // let title = document.querySelector("h1"); 
+        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count1*precio1} pesos?` )
+    }
+    let Comprar2 = () => {
+        // let title = document.querySelector("h1"); 
+        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count2*precio2} pesos?` )
+    }
+    let Comprar3 = () => {
+        // let title = document.querySelector("h1"); 
+        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count3*precio3} pesos?` )
+    }
+    let Comprar4 = () => {
+        // let title = document.querySelector("h1"); 
+        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count4*precio4} pesos?` )
+    }
 
+    const [count1, setCount1] = useState(1);
+    const [count2, setCount2] = useState(1);
+    const [count3, setCount3] = useState(1);
+    const [count4, setCount4] = useState(1);
+    let precio1 = 10000;
+    let precio2 = 15000;
+    let precio3 = 13000;
+    let precio4 = 20000;
+
+    console.log(count1, count2, count3, count4);
     return(
-        <> 
+        <>
  <div className="nav">
  <h2 className="networking">Networking</h2>
  <h2 className="nosotros"> <Link className="nos" href="A">Nosotros</Link> </h2>
@@ -82,7 +108,7 @@ export default function Mansiones () {
 
         <div className="mansiones">
             
-<div className="bloque1">
+<div className="grilla1">
 <h1 className="titulo1">Glamourous Great Falls Mansion  </h1>
 <div className="mansion1"> 
     <img src="../mansion1/frente.webp" alt="" />
@@ -96,10 +122,17 @@ export default function Mansiones () {
     </div>    
 <p  className="descripcion1">¡Esta lujosa mansión te dejará sin aliento! Apareció en la revista y reality tv show. La propiedad tiene más de 10,000 pies cuadrados con 6 dormitorios y 7 baños. Cada dormitorio tiene su baño privado para mayor comodidad. Además, una impresionante cocina gourmet y comedor. Hermoso patio trasero enorme con una piscina fascinante. Disfruta de este hermoso oasis para relajarte y disfrutar de una estancia cómoda.  
 La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 20 pies de altura es excepcionalmente hermosa. La puerta francesa conduce a la terraza y la piscina. Cada dormitorio tiene sus baños en suite. Máquina de karaoke para el entretenimiento. Actividades y juegos divertidos están disponibles, como mesa de ping-pong, hockey de aire, futbolín, casa de rebote y mucho más. </p>
-<button className="boton">Comprar por $500.000</button>
+<div className="botones"> Días de estadía   
+    <button onClick={() => setCount1(count1 + 1)}>+</button>
+    {count1}
+    <button onClick={() => { if(count1 > 1) { setCount1(count1 - 1) } } }>-</button>
+    Fecha de inicio
+    <input type="date"/>
+    </div>
+<button onClick={Comprar1} className="boton">Alquilar</button>
 </div>
 
-<div> 
+<div className="grilla1"> 
 <h1 className="titulo2">IBB Beach Mansion   </h1>
 <div className="mansion2">
     <img src="../mansion2/frente.webp" alt="" />
@@ -112,10 +145,18 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
 </div>
 <p className="descripcion2">Conocida por los lugareños como el lugar donde vivió una celebridad de la lista A durante casi un año durante una filmación de películas en Rockaway Beach y Astoria, la mansión de playa "Volveré" es la opción perfecta para tu reunión familiar posterior a Covid o una gran escapada con múltiples familias y amigos. Esta casa de 6BR/6BA 6400 pies cuadrados ofrece una escapada costera pacífica lejos del ajetreo de la vida de la ciudad, pero lo suficientemente cerca como para disfrutar de todo lo que el océano tiene para ofrecer. Cada habitación tiene unas vistas panorámicas inmejorables al mar, incluidas las cinco suites principales. Reúnete en dos balcones o en la espaciosa terraza de 2500 pies cuadrados, que es el lugar ideal para asar a tu familia una comida, ponte al día sobre la chimenea o disfruta de la hermosa puesta de sol sobre el océano relajándose de la nueva bañera de hidromasaje.
  </p>   
- <button className="boton">Comprar por $600.000</button>
+ <div className="botones"> 
+    <div className="txt">Dias de estadía </div>  
+    <button onClick={() => setCount2(count2 + 1) }>+</button>
+    {count2}
+    <button onClick={() => { if(count2 > 1) { setCount2(count2 - 1) } }}>-</button>
+    Fecha de inicio
+    <input type="date" />
+    </div>
+ <button onClick={Comprar2} className="boton">Alquilar</button>
 </div>
 
-<div>
+<div className="grilla2">
 <h1 className="titulo3">The Bluegrass Palace</h1>
 <div className="mansion3">
 
@@ -130,10 +171,18 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
 <p className="descripcion3">Hay un lugar especial, ubicado en medio de las colinas ondulantes de Kentucky bluegrass, donde 29,000 pies cuadrados de lujo sin paliativos le dan la bienvenida. Donde las puertas privadas se abren a un paraíso idílico de 9 acres todo tuyo.
 Donde una espléndida grandeza del sur se desarrolla dentro de cuatro niveles de 12 suites del dormitorio y un salón de baile, 2 cocinas modernas, 15 baños espaciosos, un escenario de actuación, un cine y una piscina cubierta.
 El Palacio Bluegrass... tus sueños te esperan. </p> 
-<button className="boton">Comprar por $1.000.000</button>
+    <div className="botones">  
+    <div className="txt">Dias de estadía </div>  
+    <button onClick={() => {  setCount3(count3 + 1) } }>+</button>
+    {count4}
+    <button onClick={() => { if(count3 > 1) { setCount3(count3 - 1) } } }>-</button>
+    Fecha de inicio
+    <input type="date" />
+    </div>
+<button onClick={Comprar3} className="boton">Alquilar</button>
 </div>
 
-<div> 
+<div className="grilla2"> 
 <h1 className="titulo4"> Winthrop Estate 32 acres  </h1>
 <div className="mansion4">
     <img src="../mansion4/aereo.webp" alt="" />
@@ -145,9 +194,18 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
     <img src="../mansion4/habitacion2.webp" alt="" />
     </div>
 <p className="descripcion4"> The Winthrop Estate es una Great Estate registrada construida en 1875 para Henri Braem, Embajador de Estados Unidos en Dinamarca y socio en Cunard Steamship Lines, famosa por la ultra lujosa línea de barcos Queen Mary, entre otras. Braem vendió la finca a la familia Winthrop, descendientes de John Winthrop, el gobernador fundador de Massachusetts, desde donde la finca tomó su nombre actual. La mansión está recién renovada con toques modernos y bien pensados en sus orígenes e incluye servicios de primer nivel. </p>    
-<button className="boton">Comprar por $700.000</button>
-</div>
+<div className="botones">  
+    <div className="txt">Dias de estadía </div>  
+    <button onClick={() => {  setCount4(count4 + 1) } }>+</button>
+    {count4}
+    <button onClick={() => { if(count4 > 1) { setCount4(count4 - 1) } } }>-</button>
+    Fecha de inicio
+    <input type="date" />
+    </div>
+<button onClick={Comprar4} className="boton">Alquilar</button>
+
         </div>
+ </div>
 </>
-    )
-}
+  )}    
+       
