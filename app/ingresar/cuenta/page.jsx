@@ -1,7 +1,7 @@
 "use client";
 import Link from "next/link";
 import "./style.css"
-import "../"
+
 
 
 export default function Cuenta () {
