@@ -12,12 +12,7 @@
 html
 {
     font-family: Montserrat, sans-serif;
-    /*
-    background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
-    url(/fotos/fondo.jpg);
-    background-position:center; 
-    */
-    background-color: var(--azul_acero);
+    background: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
     
 }
 body {

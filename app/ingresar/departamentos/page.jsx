@@ -43,35 +43,79 @@ export default function Departamentos () {
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
     }  
+/*    Traer data de un json
+    fetch("../departamentos.json")
+    .then(respuesta => {
+        console.log(respuesta);
+        if (respuesta.ok) {
+            respuesta.json().then(departamentos => {
+                
+                // mostrarDepartamentos(departamentos);
+                // mostrarPrecios(departamentos.precioPorDia); 
+            })
+        }
+    })
+    .catch(error => {
+         console.error("Error:", error);
+    })
+*/
+
    
     
-    
     let Comprar1 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count1*precio1} pesos?` )
+        let title = document.querySelector("#title1"); 
+        var dateControl = document.querySelector('input[type="date"]');       
+        var date = dateControl.valueAsDate;
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count1} noches por $${count1*precio1} pesos? ${date} `  )
     }
+    
     let Comprar2 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count2*precio2} pesos?` )
+        let title = document.querySelector("#title2"); 
+     
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count2} noches por $${count2*precio2} pesos?` )
     }
     let Comprar3 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count3*precio3} pesos?` )
+        let title = document.querySelector("#title3"); 
+     
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count3} noches por $${count3*precio3} pesos?` )
     }
     let Comprar4 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count4*precio4} pesos?` )
+        let title = document.querySelector("#title4"); 
+        
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count4} noches por $${count4*precio4} pesos?` )
+
     }
     
     const [count1, setCount1] = useState(1);
     const [count2, setCount2] = useState(1);
     const [count3, setCount3] = useState(1);
     const [count4, setCount4] = useState(1);
-    let precio1 = 10000;
+    let precio1 = 10000; 
     let precio2 = 15000;
     let precio3 = 13000;
     let precio4 = 20000;
-console.log(count1, count2, count3, count4);
+    console.log(count1, count2, count3, count4);
+
+   /* fetch("../departamentos.json")
+    .then(respuesta => {
+        console.log(respuesta);
+        if (respuesta.ok) {
+            respuesta.json().then(departamentos => {
+                console.log(departamentos);
+                mostrarDepartamentos(departamentos);
+            })
+        }
+    })
+    .catch(error => {
+         console.error("Error:", error);
+    })
+   
+    function mostrarDepartamentos (departamentos) {
+        for (var departamento of departamentos) {
+            console.log(departamento.precioPorDia);
+        }
+    }
+    */
 
     return ( 
         <>
@@ -110,7 +154,7 @@ console.log(count1, count2, count3, count4);
 
 <div className="casas"> 
 <div className="grilla1"> 
-     <h1 className="titulo">Habitación en Honolulu Hawái, Estados Unidos  </h1> 
+     <h1 id="title1" className="titulo">Habitación en Honolulu Hawái, Estados Unidos</h1> 
      <div className="casa1">
     <img src="../depto1/frente.webp" alt="" />
     <img src="../depto1/cama.jpg" alt="" />
@@ -122,18 +166,18 @@ console.log(count1, count2, count3, count4);
 Y los mejores lugares, lugares, lugares. Esta unidad puede ver el mar directamente desde la colina del piso 21. El condominio de 500 pies cuadrados con una enorme terraza de 120 pies cuadrados tiene muebles de lujo, de estilo moderno. El condominio tiene sistema de aire acondicionado dividido, Internet de alta velocidad gratuita, TV por cable y servicio telefónico gratuito a todos los EE. UU. y Canadá.
  </p>
     <div className="botones"> Días de estadía   
-    <button onClick={() => setCount1(count1 + 1)}>+</button>
-    {count1}
     <button onClick={() => { if(count1 > 1) { setCount1(count1 - 1) } } }>-</button>
+    {count1}
+    <button onClick={() => setCount1(count1 + 1)}>+</button>
     Fecha de inicio
-    <input type="date"/>
+    <input id="date1" type="date" required pattern="\d{4}-\d{2}-\d{2}"/>
     </div>
     <button onClick={Comprar1} className="boton">Alquilar</button> 
 
 </div>
 
 <div className="grilla1">  
-    <h1 className="titulo">Estudio Penthouse East 50s with Roof Terrace</h1>  
+    <h1 id="title2" className="titulo">Estudio Penthouse East 50s with Roof Terrace</h1>  
     <div className="casa2">
     <img src="../depto2/living.webp" alt="" />
     <img src="../depto2/muebles.webp" alt="" />
@@ -147,9 +191,9 @@ El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantad
    
     <div className="botones"> 
     <div className="txt">Dias de estadía </div>  
-    <button onClick={() => setCount2(count2 + 1) }>+</button>
-    {count2}
     <button onClick={() => { if(count2 > 1) { setCount2(count2 - 1) } }}>-</button>
+    {count2}
+    <button onClick={() => setCount2(count2 + 1) }>+</button>
     Fecha de inicio
     <input type="date" />
     </div>
@@ -158,7 +202,7 @@ El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantad
 </div>
 
 <div className="grilla2"> 
-    <h1 className="titulo">Habitación en Mackinac Island, Míchigan, Estados Unidos</h1> 
+    <h1 id="title3" className="titulo">Habitación en Mackinac Island, Míchigan, Estados Unidos</h1> 
     <div className="casa3">
     <img src="../depto3/frente.webp" alt="" />
     <img src="../depto3/cocina.webp" alt="" />
@@ -171,10 +215,10 @@ El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantad
 Equipado con una cama tamaño king de hierro forjado, baño completo, mininevera, microondas, cafetera y wifi.</p>
   
     <div className="botones"> 
-    <div className="txt">Dias de estadía </div>  
-    <button onClick={() => { setCount3(count3 + 1) }}>+</button>
-    {count3}
+    <div className="txt">Dias de estadía </div> 
     <button onClick={() => { if(count3 > 1) { setCount3(count3 - 1) } } }>-</button>
+    {count3}
+    <button onClick={() => { setCount3(count3 + 1) }}>+</button>
     Fecha de inicio
     <input type="date" />
     </div>
@@ -183,7 +227,7 @@ Equipado con una cama tamaño king de hierro forjado, baño completo, mininevera
 </div>
 
 <div className="grilla2"> 
-    <h1 className="titulo">Habitación en Knoxville Tennessee, Estados Unidos</h1> 
+    <h1 id="title4" className="titulo">Habitación en Knoxville Tennessee, Estados Unidos</h1> 
     <div className="casa4"> 
     <img id="1" src="../depto4/estar.webp" alt="" />
     <img id="2" src="../depto4/cocina.webp" alt="" />
@@ -198,9 +242,9 @@ Habitación privada ubicada en una casa adosada de 3 dormitorios y 1,5 baños ub
 
     <div className="botones">  
     <div className="txt">Dias de estadía </div>  
-    <button onClick={() => {  setCount4(count4 + 1) } }>+</button>
-    {count4}
     <button onClick={() => { if(count4 > 1) { setCount4(count4 - 1) } } }>-</button>
+    {count4}
+    <button onClick={() => {  setCount4(count4 + 1) } }>+</button>
     Fecha de inicio
     <input type="date" />
     </div>

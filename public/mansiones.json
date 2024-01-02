@@ -1,0 +1,30 @@
+[
+{ 
+    "mansion1" :
+    {
+        "nombre": "Glamourous Great Falls Mansion",
+        "precioPorDia": 30000
+    }
+},
+{ 
+    "mansion2" :
+    {
+        "nombre": "IBB Beach Mansion",
+        "precioPorDia": 45000
+    }
+},
+{ 
+    "mansion3" :
+    {
+        "nombre": "The Bluegrass Palace",
+        "precioPorDia": 23000
+    }
+},
+{
+    "mansion4" :
+    {
+        "nombre": "Winthrop Estate 32 acres",
+        "precioPorDia": 50000
+    }
+}
+]

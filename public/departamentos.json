@@ -1,0 +1,18 @@
+[
+    {
+        "nombre": "Habitación en Honolulu Hawái, Estados Unidos",
+        "precioPorDia": 10000
+    },
+    {
+        "nombre": "Estudio Penthouse East 50s with Roof Terrace",
+        "precioPorDia": 15000
+    },
+    {
+        "nombre": "Habitación en Mackinac Island Míchigan, Estados Unidos",
+        "precioPorDia": 13000
+    },
+    {
+        "nombre": "Habitación en Knoxville Tennessee, Estados Unidos",
+        "precioPorDia": 20000
+    }
+]

@@ -3,6 +3,8 @@ import "./style.css"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
+
+
 export default function Mansiones () {
     let menu = () => { 
         let botones = document.querySelector(".hi")
@@ -42,6 +44,13 @@ export default function Mansiones () {
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
     }  
+    
+    /* ¿Porque me tira Cannot read property  "addEventListener" of null ?
+    let comprar1 = document.querySelector("#boton1")
+    comprar1.addEventListener("click", () => {
+        confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count1*precio1} pesos?`)
+    });
+    */
 
     let Comprar1 = () => {
         // let title = document.querySelector("h1"); 
@@ -64,12 +73,12 @@ export default function Mansiones () {
     const [count2, setCount2] = useState(1);
     const [count3, setCount3] = useState(1);
     const [count4, setCount4] = useState(1);
-    let precio1 = 10000;
-    let precio2 = 15000;
-    let precio3 = 13000;
-    let precio4 = 20000;
+    let precio1 = 30000;
+    let precio2 = 45000;
+    let precio3 = 23000;
+    let precio4 = 50000;
+    
 
-    console.log(count1, count2, count3, count4);
     return(
         <>
  <div className="nav">
@@ -129,7 +138,7 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
     Fecha de inicio
     <input type="date"/>
     </div>
-<button onClick={Comprar1} className="boton">Alquilar</button>
+<button onClick={Comprar1} id="boton1" className="boton">Alquilar</button>
 </div>
 
 <div className="grilla1"> 

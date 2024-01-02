@@ -6,15 +6,15 @@
     --verde_oscuro: rgb(2, 59, 2);
     --azul_acero: rgb(20,130,180); 
     --gris: rgba(49, 39, 39, 0.26);
-    --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
+    --gradiente: rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329);
 }
 
 
 html
 {
     font-family: Montserrat, sans-serif;
-    background-color: var(--azul_acero);
-    
+    background: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
+
 }
 body {
     padding: 0;
@@ -327,21 +327,23 @@ body {
     font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
     align-items: center;
     
+
+
 }
 
 .botones button
 {
     height: 30px;
     width: 35px;
-    text-align: center;
-    justify-items: center;
-    border-radius: 40px;
+    border-radius: 40px; 
     background-color: var(--verde);
-    border-style:none;
+    border-style:none; 
     color: black;
     font-weight: 900;
-    align-items: center;
-    
+    clip-path: circle(45% at 50% 50%); 
+    /* clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 0% 25%, 0% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);  */
+
+
 }
 .botones button:hover{
     

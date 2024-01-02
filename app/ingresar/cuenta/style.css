@@ -12,12 +12,14 @@
 html
 {
     font-family: Montserrat, sans-serif;
-    background-color: var(--azul_acero);
-    
+    background-image: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
+    background-repeat: no-repeat;
+    background-size:auto;
 }
 body {
     padding: 0;
     margin: 0;
+     
 }
 .nav {
     display: flex;
@@ -200,4 +202,9 @@ body {
     height: 43px;
     border-radius: 10px;
     border-style: hidden;
+    
+}
+
+#d{
+    margin-bottom: 200px;
 }
