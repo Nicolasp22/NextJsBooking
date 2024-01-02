@@ -4,7 +4,6 @@ import "./style.css"
 
 
 
-
 export default function Cuenta () {
 
     let menu = () => { 
@@ -121,6 +120,12 @@ export default function Cuenta () {
       misDatos1.style.display = "none";
       misDatos2.style.display = "none";
     }
+
+    let idioma = () => {
+      let misdatos1 = document.querySelector("#ingles")
+
+      misdatos1.style.display = "block"
+    }
 // Listas
   function funciones1(){
       Lista1();
@@ -146,12 +151,15 @@ export default function Cuenta () {
     Lista2Cierre();
     Lista3Cierre();
   }
+
+
 // Agrupacion de listas
   
            return(
         <>
-       
+      
        <div className="nav">
+       
  <h2 className="networking">Networking</h2>
  <h2 className="nosotros"> <Link className="nos" href="A">Nosotros</Link> </h2>
  <h2 id="productos" onClick={menu} className="productos">Productos</h2>
@@ -216,13 +224,14 @@ export default function Cuenta () {
     <div className="lista4"> 
       <select id="d1" name="idioma">
         <option id="es" value="Español">Español</option>
-        <option id="en" value="Ingles">Ingles</option>
+        <option onClick={idioma} id="en" value="Ingles">Ingles</option>
         <option id="fr" value="Francés">Francés</option>
       </select>
       <input id="d2" onClick={Lista4Cierre} type="button" value="Guardar" />
       </div>
-    
+      
 </div>
+
         </>
     )
 }
