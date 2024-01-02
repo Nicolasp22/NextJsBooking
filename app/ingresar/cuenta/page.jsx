@@ -44,6 +44,7 @@ export default function Cuenta () {
         ca.style.visibility = "visible";
         // configuraciones.style.color = 'black'; 
         }
+        
     let Cierre = () => {
         let close = document.querySelector(".lista-cuenta")
         let ca = document.querySelector(".cierre2")
@@ -51,12 +52,12 @@ export default function Cuenta () {
 
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
-        configuraciones.style.color = 'black';
+        configuraciones.style.color = 'black'; 
     }    
     let titileo = () => {
         let configuraciones = document.querySelector(".datos")
 
-        configuraciones.style.color = 'blue';
+        configuraciones.style.color = 'blue'; 
       
     }
     // Navegacion
@@ -141,6 +142,11 @@ export default function Cuenta () {
 
       misdatos1.style.display = "block"
     }
+    let darkMode = () => {
+    const body = document.querySelector(".contenido");
+    // Agregar o eliminar la clase "dark" al elemento body
+    body.classList.toggle("dark");
+    }
 // Listas
   function funciones1(){
       Lista1();
@@ -167,21 +173,25 @@ export default function Cuenta () {
     Lista3Cierre();
   }
 
+  
 
 // Agrupacion de listas
   
            return(
         <>
-      
+   
        <div className="nav">
        
  <h2 className="networking">Networking</h2>
- <h2 className="nosotros"> <Link className="nos" href="A">Nosotros</Link> </h2>
+ <h2 className="nos" onClick={darkMode}> Modo oscuro</h2>
  <h2 id="productos" onClick={menu} className="productos">Productos</h2>
  <h2 onClick={Cuenta} className="micuenta">Mi cuenta</h2>
- </div>
- <div className="listas"> 
 
+ </div>
+
+ <div className="contenido" >  {/* Activo modo oscuro */}
+
+ <div className="listas"> 
 
    <div className="lista-productos"> 
   <div className="hi"> 
@@ -207,7 +217,8 @@ export default function Cuenta () {
 
   </div>
   <h1 id="perfil">Mi perfil</h1>
-  <div className="datos">
+  
+  <div className="datos" >
 
     <div id="g" onClick={funciones1}>Mis datos personales </div>
     <div className="lista1"> 
@@ -245,8 +256,8 @@ export default function Cuenta () {
       <input id="d2" onClick={Lista4Cierre} type="button" value="Guardar" />
       </div>
       
-</div>
-
+</div> 
+     </div>
         </>
     )
 }

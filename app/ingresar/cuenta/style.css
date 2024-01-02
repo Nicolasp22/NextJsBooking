@@ -39,7 +39,7 @@ body {
 .nos {
     text-decoration: none;
     color: black;
-    margin-left: 650px;
+    margin-left: 600px;
 }
 .nos:hover {
     color: var(--azul_acero);
@@ -68,12 +68,16 @@ body {
     
     
 }
+.contenido.dark {
+    background-color: black;
+    color: white;
+  }
 
 .listas {
     display: flex;
     /* margin-left: 1030px;  */
     justify-content: flex-end;
-    gap: 25px;
+    gap: 22px;
     height: 40px;
 }
 
@@ -141,6 +145,7 @@ body {
     font-size: 40px;
     text-decoration: underline;
 }
+
 
 .datos{
     
