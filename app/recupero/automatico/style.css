@@ -1,19 +1,82 @@
-body
+:root
+{
+    --violet: rgb(66, 19, 107);
+    --violeta: rgb(87, 38, 131);
+    --borde: rgb(35, 4, 41);
+    --verde: rgb(66, 179, 66);
+    --verde_oscuro: rgb(2, 59, 2);
+    --azul_acero: rgb(20,130,180); 
+    --gris: rgba(49, 39, 39, 0.26);
+    --gradiente: rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329);
+}
+
+html
 {
     font-family: Montserrat, sans-serif;
     background-image: linear-gradient(rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329)), 
     url(/fotos/fondo.jpg);
     background-position:center;
+    
 }
 
-h2
+h2, h3
 {
-   text-align: center;
+   height: 50px;
+   width: 600px;
+   margin-top: 20px;
+}
+h3{   
+    margin-top: 100px;
+    text-decoration-line: underline;
+
 }
 
-h3
-{
-    text-align: center;
+
+.gracias{
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 100px 100px 100px;
+    justify-content: center;
+    align-items: center; 
+    text-align: center;  
+    background-color:  rgb(87, 38, 131); 
+    margin-top: 200px;
+    border-radius: 15px;
+    height: 300px;
+    width: 650px;
+    margin-left: auto;
+    margin-right: auto; 
+}
+
+.link
+{   
+
     margin-left: auto;
     margin-right: auto;
+    width: 200px;
+    height: 45px;
+    border-radius: 40px;
+    background-color: var(--verde);
+    border-style:none;
+    color: white;
+    font-weight: 900;
+    font-size: 15px;
+    font-family: Montserrat, sans-serif;
+    transition: transform 0.5s;
+    animation-duration: 2s;
+    text-decoration: none;
+    text-decoration-line: none;
+    margin-bottom: 20px;
+}
+  
+.link:hover
+{
+    transform: scale(1.25);
+    cursor: pointer;
+}
+
+.texto{
+    margin-top: 10px;
+    
+    
 }

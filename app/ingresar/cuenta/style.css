@@ -159,6 +159,7 @@ body {
     margin: 15px;
     font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     width: fit-content;
+
 }
 #g:hover, #b:hover, #c:hover, #d:hover{
   cursor: pointer;
@@ -166,6 +167,7 @@ body {
   
   text-decoration: underline;  
   transform: translateX(15px);
+  /* transform: scale(1.5);  */
   
 }
 

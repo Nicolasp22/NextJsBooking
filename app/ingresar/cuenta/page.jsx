@@ -11,39 +11,54 @@ export default function Cuenta () {
         let buttons = document.querySelector(".ho")
         let cerrar = document.querySelector(".cierre")
         let div = document.querySelector(".lista-productos")
-        
+        let configuraciones = document.querySelector(".datos")
+
 
         botones.style.visibility = "visible"; 
         buttons.style.visibility = "visible"; 
         cerrar.style.visibility = "visible";
         div.style.visibility = "visible";
-        
+        configuraciones.style.color = 'black';
         } 
         
     let cerrar = () => {
         let boton = document.querySelector(".hi")
         let button = document.querySelector(".ho")
-         let cerrar = document.querySelector(".cierre")
-         let div = document.querySelector(".lista-productos ")
+        let cerrar = document.querySelector(".cierre")
+        let div = document.querySelector(".lista-productos ")
+        let configuraciones = document.querySelector(".datos")
+
         boton.style.visibility = "hidden"; 
         button.style.visibility = "hidden"; 
         cerrar.style.visibility = "hidden";
         div.style.visibility = "hidden";
+        configuraciones.style.color = 'black';
        }
 
     let Cuenta = () => {
         let cuenta = document.querySelector(".lista-cuenta")
         let ca = document.querySelector(".cierre2")
+        // let configuraciones = document.querySelector(".datos") 
+
         cuenta.style.visibility = "visible";
         ca.style.visibility = "visible";
-        
+        // configuraciones.style.color = 'black'; 
         }
     let Cierre = () => {
         let close = document.querySelector(".lista-cuenta")
         let ca = document.querySelector(".cierre2")
+        let configuraciones = document.querySelector(".datos")
+
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
+        configuraciones.style.color = 'black';
     }    
+    let titileo = () => {
+        let configuraciones = document.querySelector(".datos")
+
+        configuraciones.style.color = 'blue';
+      
+    }
     // Navegacion
     let Lista1 = () => { 
       let misDatos1 = document.querySelector("#g1")
@@ -183,10 +198,10 @@ export default function Cuenta () {
     <div className="lista-cuenta"> 
  <div className="perfil">
     <img src="../iconos/person.svg" alt="" />
-    <Link href="./cuenta" id="link3"> Mi perfil </Link> </div>
+    <Link href="./cuenta" id="link3" onClick={Cierre}> Mi perfil </Link> </div>
  <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="./cuenta" id="link4"> Configuración </Link> </div>
+    <Link href="./cuenta" id="link4" onClick={titileo}> Configuración </Link> </div>
  <div className="cierre2" onClick={Cierre}>Cerrar</div>
    </div>
 
@@ -203,7 +218,7 @@ export default function Cuenta () {
 <input type="psw" id="g5" placeholder="N************"/>
 <input type="button" id="g6" value="Guardar" onClick={Lista1Cierre} />
 </div>
-
+ 
 
     <div id="b" onClick={funciones2}>Cupones </div> 
 <div className="lista2">
