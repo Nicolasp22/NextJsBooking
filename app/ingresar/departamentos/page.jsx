@@ -43,30 +43,13 @@ export default function Departamentos () {
         close.style.visibility = "hidden";
         ca.style.visibility = "hidden";
     }  
-/*    Traer data de un json
-    fetch("../departamentos.json")
-    .then(respuesta => {
-        console.log(respuesta);
-        if (respuesta.ok) {
-            respuesta.json().then(departamentos => {
-                
-                // mostrarDepartamentos(departamentos);
-                // mostrarPrecios(departamentos.precioPorDia); 
-            })
-        }
-    })
-    .catch(error => {
-         console.error("Error:", error);
-    })
-*/
-
    
     
     let Comprar1 = () => {
         let title = document.querySelector("#title1"); 
         var dateControl = document.querySelector('input[type="date"]');       
         var date = dateControl.valueAsDate;
-        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count1} noches por $${count1*precio1} pesos? ${date} `  )
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count1} noches por $${count1*precio1} pesos?`  )
     }
     
     let Comprar2 = () => {
@@ -96,26 +79,6 @@ export default function Departamentos () {
     let precio4 = 20000;
     console.log(count1, count2, count3, count4);
 
-   /* fetch("../departamentos.json")
-    .then(respuesta => {
-        console.log(respuesta);
-        if (respuesta.ok) {
-            respuesta.json().then(departamentos => {
-                console.log(departamentos);
-                mostrarDepartamentos(departamentos);
-            })
-        }
-    })
-    .catch(error => {
-         console.error("Error:", error);
-    })
-   
-    function mostrarDepartamentos (departamentos) {
-        for (var departamento of departamentos) {
-            console.log(departamento.precioPorDia);
-        }
-    }
-    */
 
     return ( 
         <>

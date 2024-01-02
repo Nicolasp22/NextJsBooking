@@ -53,20 +53,27 @@ export default function Mansiones () {
     */
 
     let Comprar1 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count1*precio1} pesos?` )
+        let title = document.querySelector(".titulo1"); 
+        var dateControl = document.querySelector('input[type="date"]');       
+        var date = dateControl.valueAsDate;
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count1} noches por $${count1*precio1} pesos?`  )
     }
+    
     let Comprar2 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count2*precio2} pesos?` )
+        let title = document.querySelector(".titulo2"); 
+     
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count2} noches por $${count2*precio2} pesos?` )
     }
     let Comprar3 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count3*precio3} pesos?` )
+        let title = document.querySelector(".titulo3"); 
+     
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count3} noches por $${count3*precio3} pesos?` )
     }
     let Comprar4 = () => {
-        // let title = document.querySelector("h1"); 
-        window.confirm(`¿Estas seguro de que quieres alquilar este departamento por $${count4*precio4} pesos?` )
+        let title = document.querySelector(".titulo4"); 
+        
+        window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count4} noches por $${count4*precio4} pesos?` )
+
     }
 
     const [count1, setCount1] = useState(1);
@@ -118,7 +125,7 @@ export default function Mansiones () {
         <div className="mansiones">
             
 <div className="grilla1">
-<h1 className="titulo1">Glamourous Great Falls Mansion  </h1>
+<h1 className="titulo1">Glamourous Great Falls Mansion</h1>
 <div className="mansion1"> 
     <img src="../mansion1/frente.webp" alt="" />
     <img src="../mansion1/otra.webp" alt="" />
@@ -132,9 +139,9 @@ export default function Mansiones () {
 <p  className="descripcion1">¡Esta lujosa mansión te dejará sin aliento! Apareció en la revista y reality tv show. La propiedad tiene más de 10,000 pies cuadrados con 6 dormitorios y 7 baños. Cada dormitorio tiene su baño privado para mayor comodidad. Además, una impresionante cocina gourmet y comedor. Hermoso patio trasero enorme con una piscina fascinante. Disfruta de este hermoso oasis para relajarte y disfrutar de una estancia cómoda.  
 La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 20 pies de altura es excepcionalmente hermosa. La puerta francesa conduce a la terraza y la piscina. Cada dormitorio tiene sus baños en suite. Máquina de karaoke para el entretenimiento. Actividades y juegos divertidos están disponibles, como mesa de ping-pong, hockey de aire, futbolín, casa de rebote y mucho más. </p>
 <div className="botones"> Días de estadía   
-    <button onClick={() => setCount1(count1 + 1)}>+</button>
-    {count1}
     <button onClick={() => { if(count1 > 1) { setCount1(count1 - 1) } } }>-</button>
+    {count1}
+    <button onClick={() => setCount1(count1 + 1)}>+</button>
     Fecha de inicio
     <input type="date"/>
     </div>
@@ -142,7 +149,7 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
 </div>
 
 <div className="grilla1"> 
-<h1 className="titulo2">IBB Beach Mansion   </h1>
+<h1 className="titulo2">IBB Beach Mansion</h1>
 <div className="mansion2">
     <img src="../mansion2/frente.webp" alt="" />
     <img src="../mansion2/habitacion.webp" alt="" />
@@ -156,9 +163,9 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
  </p>   
  <div className="botones"> 
     <div className="txt">Dias de estadía </div>  
-    <button onClick={() => setCount2(count2 + 1) }>+</button>
-    {count2}
     <button onClick={() => { if(count2 > 1) { setCount2(count2 - 1) } }}>-</button>
+    {count2}
+    <button onClick={() => setCount2(count2 + 1) }>+</button>
     Fecha de inicio
     <input type="date" />
     </div>
@@ -181,10 +188,10 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
 Donde una espléndida grandeza del sur se desarrolla dentro de cuatro niveles de 12 suites del dormitorio y un salón de baile, 2 cocinas modernas, 15 baños espaciosos, un escenario de actuación, un cine y una piscina cubierta.
 El Palacio Bluegrass... tus sueños te esperan. </p> 
     <div className="botones">  
-    <div className="txt">Dias de estadía </div>  
-    <button onClick={() => {  setCount3(count3 + 1) } }>+</button>
-    {count4}
+    <div className="txt">Dias de estadía </div>   
     <button onClick={() => { if(count3 > 1) { setCount3(count3 - 1) } } }>-</button>
+    {count4}
+    <button onClick={() => {  setCount3(count3 + 1) } }>+</button>
     Fecha de inicio
     <input type="date" />
     </div>
@@ -192,7 +199,7 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
 </div>
 
 <div className="grilla2"> 
-<h1 className="titulo4"> Winthrop Estate 32 acres  </h1>
+<h1 className="titulo4"> Winthrop Estate 32 acres</h1>
 <div className="mansion4">
     <img src="../mansion4/aereo.webp" alt="a" />
     <img src="../mansion4/frente.webp" alt="a" />
@@ -205,9 +212,9 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
 <p className="descripcion4"> The Winthrop Estate es una Great Estate registrada construida en 1875 para Henri Braem, Embajador de Estados Unidos en Dinamarca y socio en Cunard Steamship Lines, famosa por la ultra lujosa línea de barcos Queen Mary, entre otras. Braem vendió la finca a la familia Winthrop, descendientes de John Winthrop, el gobernador fundador de Massachusetts, desde donde la finca tomó su nombre actual. La mansión está recién renovada con toques modernos y bien pensados en sus orígenes e incluye servicios de primer nivel. </p>    
 <div className="botones">  
     <div className="txt">Dias de estadía </div>  
-    <button onClick={() => {  setCount4(count4 + 1) } }>+</button>
-    {count4}
     <button onClick={() => { if(count4 > 1) { setCount4(count4 - 1) } } }>-</button>
+    {count4}
+    <button onClick={() => {  setCount4(count4 + 1) } }>+</button>
     Fecha de inicio
     <input type="date" />
     </div>
