@@ -38,11 +38,11 @@ export default function Cuenta () {
     let Cuenta = () => {
         let cuenta = document.querySelector(".lista-cuenta")
         let ca = document.querySelector(".cierre2")
-        // let configuraciones = document.querySelector(".datos") 
+        let configuraciones = document.querySelector(".datos") 
 
         cuenta.style.visibility = "visible";
         ca.style.visibility = "visible";
-        // configuraciones.style.color = 'black'; 
+        configuraciones.style.color = 'black'; 
         }
         
     let Cierre = () => {
@@ -137,11 +137,6 @@ export default function Cuenta () {
       misDatos2.style.display = "none";
     }
 
-    let idioma = () => {
-      let misdatos1 = document.querySelector("#ingles")
-
-      misdatos1.style.display = "block"
-    }
     let darkMode = () => {
     const body = document.querySelector(".contenido");
     // Agregar o eliminar la clase "dark" al elemento body
@@ -202,7 +197,7 @@ export default function Cuenta () {
     <img src="../iconos/houses.svg" alt="" />
     <Link id="link2" href="../ingresar/mansiones">Mansiones</Link> 
     </div> 
-  <div className="cierre" onClick={cerrar}> Cerrar </div>
+  <div className="cierre" onClick={cerrar}>Cerrar</div>
    </div>
 
     <div className="lista-cuenta"> 
@@ -250,7 +245,7 @@ export default function Cuenta () {
     <div className="lista4"> 
       <select id="d1" name="idioma">
         <option id="es" value="Español">Español</option>
-        <option onClick={idioma} id="en" value="Ingles">Ingles</option>
+        <option id="en" value="Ingles">Ingles</option>
         <option id="fr" value="Francés">Francés</option>
       </select>
       <input id="d2" onClick={Lista4Cierre} type="button" value="Guardar" />

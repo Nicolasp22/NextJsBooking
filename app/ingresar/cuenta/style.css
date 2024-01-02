@@ -71,7 +71,8 @@ body {
 .contenido.dark {
     background-color: black;
     color: white;
-  }
+}
+
 
 .listas {
     display: flex;
@@ -90,7 +91,7 @@ body {
     width: 150px;
     height: 130px;
     background-color: white;
-    
+    color: black;
    
 }
 .lista-productos div,
@@ -107,6 +108,7 @@ body {
     width: 150px;
     height: 130px;
     background-color: white;
+    color: black;
 }
 
 .productos:hover {
