@@ -20,12 +20,17 @@ body {
     padding: 0;
     margin: 0;
 }
+.contenido.dark {
+    background-color: black;
+    color: white;
+}
+
 .nav {
     display: flex;
     justify-content: space-between;
     padding: 0px;
     background-color: white;
-  
+    color: black;
 }
 .networking{
     margin-left: 35px;
@@ -50,7 +55,8 @@ body {
 .cierre,
 .lista-productos,
 .lista-cuenta,
-.cierre2
+.cierre2,
+.lista-aspecto
 {
     visibility: hidden;
     
@@ -61,12 +67,15 @@ body {
 .cierre:hover,
 .perfil:hover,
 .conf:hover,
-.cierre2:hover
+.cierre2:hover,
+.lista-aspecto1:hover,
+.lista-aspecto2:hover
 {
     background-color: var(--gris);
     cursor: pointer; 
     
 }
+
 
 #link1,
 #link2,
@@ -82,25 +91,39 @@ body {
 .listas {
     display: flex;
     justify-content: end;
-    gap: 25px;
+    gap: 22px;
+}
+
+.lista-aspecto{
+    display: grid;
+    text-align: center; 
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 150px;
+    height: 130px;
+    background-color: white;
+    color: black;
+  
 }
 
 .lista-productos {
     display: grid;
     text-align: center;
-    
+   
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     width: 150px;
     height: 130px;
     background-color: white;
-    
+    color: black;
    
 }
 .lista-productos div,
-.lista-cuenta div
+.lista-cuenta div,
+.lista-aspecto div
 {
     padding: 5px;
+   
 }
 .lista-cuenta{
     display: grid;
@@ -111,8 +134,8 @@ body {
     width: 150px;
     height: 130px;
     background-color: white;
+    color: black;
 }
-
 
 
 .productos:hover {

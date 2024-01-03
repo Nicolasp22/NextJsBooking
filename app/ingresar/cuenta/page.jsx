@@ -5,7 +5,11 @@ import "./style.css"
 
 
 export default function Cuenta () {
+    let aspecto = () => {
+        let modos = document.querySelector(".lista-aspecto")
 
+        modos.style.visibility = "visible";
+}
     let menu = () => { 
         let botones = document.querySelector(".hi")
         let buttons = document.querySelector(".ho")
@@ -55,10 +59,9 @@ export default function Cuenta () {
         configuraciones.style.color = 'black'; 
     }    
     let titileo = () => {
-        let configuraciones = document.querySelector(".datos")
+      let configuraciones = document.querySelector(".datos")
 
-        configuraciones.style.color = 'blue'; 
-      
+      configuraciones.style.color = 'white'; 
     }
     // Navegacion
     let Lista1 = () => { 
@@ -142,6 +145,12 @@ export default function Cuenta () {
     // Agregar o eliminar la clase "dark" al elemento body
     body.classList.toggle("dark");
     }
+
+    let brightMode = () =>{
+      const body = document.querySelector(".contenido");
+      // Agregar o eliminar la clase "dark" al elemento body
+      body.classList.remove("dark");
+  }
 // Listas
   function funciones1(){
       Lista1();
@@ -178,7 +187,7 @@ export default function Cuenta () {
        <div className="nav">
        
  <h2 className="networking">Networking</h2>
- <h2 className="nos" onClick={darkMode}> Modo oscuro</h2>
+ <h2 className="nos" onClick={aspecto}>Aspecto</h2>
  <h2 id="productos" onClick={menu} className="productos">Productos</h2>
  <h2 onClick={Cuenta} className="micuenta">Mi cuenta</h2>
 
@@ -187,6 +196,16 @@ export default function Cuenta () {
  <div className="contenido" >  {/* Activo modo oscuro */}
 
  <div className="listas"> 
+ <div className="lista-aspecto">
+ <div className="lista-aspecto1" onClick={darkMode}>
+    <img src="../iconos/obscure.svg" alt="" />
+    <div className="oscuro">Modo oscuro</div>
+ </div>
+ <div className="lista-aspecto2" onClick={brightMode}>
+    <img src="../iconos/bright.svg" alt="" />
+   <div>Modo claro</div> 
+ </div>
+</div>
 
    <div className="lista-productos"> 
   <div className="hi"> 
@@ -206,7 +225,7 @@ export default function Cuenta () {
     <Link href="./cuenta" id="link3" onClick={Cierre}> Mi perfil </Link> </div>
  <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="./cuenta" id="link4" onClick={titileo}> Configuración </Link> </div>
+    <Link href="./cuenta" className="titileo" id="link4" onClick={titileo}> Configuración </Link> </div>
  <div className="cierre2" onClick={Cierre}>Cerrar</div>
    </div>
 

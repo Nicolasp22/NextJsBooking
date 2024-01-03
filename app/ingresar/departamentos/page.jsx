@@ -5,6 +5,11 @@ import Link from "next/link"
 import { useEffect, useState } from "react";
 
 export default function Departamentos () { 
+    let aspecto = () => {
+        let modos = document.querySelector(".lista-aspecto")
+
+        modos.style.visibility = "visible";
+    }
     let menu = () => { 
         let botones = document.querySelector(".hi")
         let buttons = document.querySelector(".ho")
@@ -68,7 +73,17 @@ export default function Departamentos () {
         window.confirm(`¿Estas seguro de que quieres alquilar ${title.textContent} durante ${count4} noches por $${count4*precio4} pesos?` )
 
     }
-    
+    let darkMode = () => {
+        const body = document.querySelector(".contenido");
+        // Agregar o eliminar la clase "dark" al elemento body
+        body.classList.toggle("dark");
+    }
+    let brightMode = () =>{
+        const body = document.querySelector(".contenido");
+        // Agregar o eliminar la clase "dark" al elemento body
+        body.classList.remove("dark");
+    }
+
     const [count1, setCount1] = useState(1);
     const [count2, setCount2] = useState(1);
     const [count3, setCount3] = useState(1);
@@ -82,21 +97,32 @@ export default function Departamentos () {
 
     return ( 
         <>
+        <div className="contenido"> 
 <div className="nav">
  <h2 className="networking">Networking</h2>
- <h2 className="nosotros"> <Link className="nos" href="A">Nosotros</Link> </h2>
+ <h2 className="nos" onClick={aspecto}>Aspecto</h2>
  <h2 id="productos" onClick={menu} className="productos">Productos</h2>
  <h2 onClick={Cuenta} className="micuenta">Mi cuenta</h2>
  </div>
  <div className="listas"> 
 
+<div className="lista-aspecto">
+ <div className="lista-aspecto1" onClick={darkMode}>
+    <img src="../iconos/obscure.svg" alt="" />
+    <div className="oscuro">Modo oscuro</div>
+ </div>
+ <div className="lista-aspecto2" onClick={brightMode}>
+    <img src="../iconos/bright.svg" alt="" />
+   <div>Modo claro</div> 
+ </div>
+</div>
 
 <div className="lista-productos"> 
 <div className="ho">
     <img src="../iconos/houses.svg" alt="" />
     <Link id="link2" href="./mansiones">Mansiones</Link> </div>
 <div className="hi"><Link id="link1" href="./cuenta">Inicio</Link> </div>
-<div className="cierre" onClick={cerrar} >Cerrar</div>
+<div className="cierre" onClick={cerrar}>Cerrar</div>
 </div>
 
  <div className="lista-cuenta"> 
@@ -106,7 +132,7 @@ export default function Departamentos () {
 <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
     <Link href="./cuenta" id="link4"> Configuración </Link> </div>
-<div className="cierre2" onClick={Cierre} >Cerrar</div>
+<div className="cierre2" onClick={Cierre}>Cerrar</div>
 </div>
 
 </div>
@@ -214,7 +240,7 @@ Habitación privada ubicada en una casa adosada de 3 dormitorios y 1,5 baños ub
     <button onClick={Comprar4} className="boton">Alquilar</button>
 
 </div>
-
+       </div>
 
        </div>
         </>
