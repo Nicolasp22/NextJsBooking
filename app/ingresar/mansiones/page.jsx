@@ -6,44 +6,27 @@ import { useEffect, useState } from "react";
 
 
 export default function Mansiones () {
-    let menu = () => { 
-        let botones = document.querySelector(".hi")
-        let buttons = document.querySelector(".ho")
-        let cerrar = document.querySelector(".cierre")
-        let div = document.querySelector(".lista-productos")
+    let productos = () => {
+      let div = document.querySelector(".lista-productos")  
+      let botones = document.querySelector(".hi")
+      let buttons = document.querySelector(".ho") 
         
+        // let configuraciones = document.querySelector(".datos") 
+     div.classList.toggle("ocultar") 
+     botones.classList.toggle("ocultar")
+     buttons.classList.toggle("ocultar")
+    } 
+        
+    let cuenta = () => {
+        let lista = document.querySelector(".lista-cuenta") 
+        let perfil = document.querySelector(".perfil")
+        let conf = document.querySelector(".conf")
 
-        botones.style.visibility = "visible";
-        buttons.style.visibility = "visible";
-        cerrar.style.visibility = "visible";
-        div.style.visibility = "visible";
-        
-        } 
-        
-    let cerrar = () => {
-         let boton = document.querySelector(".hi")
-         let button = document.querySelector(".ho")
-         let cerrar = document.querySelector(".cierre")
-         let div = document.querySelector(".lista-productos")
-        boton.style.visibility = "hidden";
-        button.style.visibility = "hidden";
-        cerrar.style.visibility = "hidden";
-        div.style.visibility = "hidden";
-       }
-
-    let Cuenta = () => {
-        let cuenta = document.querySelector(".lista-cuenta")
-        let ca = document.querySelector(".cierre2")
-        cuenta.style.visibility = "visible";
-        ca.style.visibility = "visible";
-        
-        }
-    let Cierre = () => {
-        let close = document.querySelector(".lista-cuenta")
-        let ca = document.querySelector(".cierre2")
-        close.style.visibility = "hidden";
-        ca.style.visibility = "hidden";
-    }  
+        lista.classList.toggle("ocultar") 
+        perfil.classList.toggle("ocultar")
+        conf.classList.toggle("ocultar")
+     }
+    
     
     /* ¿Porque me tira Cannot read property  "addEventListener" of null ?
     let comprar1 = document.querySelector("#boton1")
@@ -86,35 +69,68 @@ export default function Mansiones () {
     let precio4 = 50000;
     
 
-    return(
+    let aspecto = () => {
+        let modos = document.querySelector(".lista-aspecto")
+        let modo1 = document.querySelector(".lista-aspecto1")
+        let modo2 = document.querySelector(".lista-aspecto2") 
+
+        modos.classList.toggle("ocultar") 
+        modo1.classList.toggle("ocultar")
+        modo2.classList.toggle("ocultar")
+    }
+    let darkMode = () => {
+        const body = document.querySelector(".contenido");
+        // Agregar o eliminar la clase "dark" al elemento body
+        body.classList.toggle("dark");
+        }
+    
+    let brightMode = () => {
+          const body = document.querySelector(".contenido");
+          // Agregar o eliminar la clase "dark" al elemento body
+          body.classList.remove("dark");
+    }
+
+    return (
         <>
  <div className="nav">
  <h2 className="networking">Networking</h2>
- <h2 className="nosotros"> <Link className="nos" href="A">Nosotros</Link> </h2>
- <h2 id="productos" onClick={menu} className="productos">Productos</h2>
- <h2 onClick={Cuenta} className="micuenta">Mi cuenta</h2>
+ <h2 className="nos" onClick={aspecto}>Aspecto</h2>
+ <h2 id="productos" onClick={productos} className="productos">Productos</h2>
+ <h2 onClick={cuenta} className="micuenta">Mi cuenta</h2>
  </div>
+  
+
+<div className="contenido"> 
+
  <div className="listas"> 
 
+ <div className="lista-aspecto">
+ <div className="lista-aspecto1" onClick={darkMode}>
+    <img src="../iconos/obscure.svg" alt="" />
+    <div className="oscuro">Modo oscuro</div>
+ </div>
+ <div className="lista-aspecto2" onClick={brightMode}>
+    <img src="../iconos/bright.svg" alt="" />
+    <div>Modo claro</div> 
+ </div>
+</div>
+ 
 
 <div className="lista-productos"> 
 <div className="hi">
     <img src="../iconos/building.svg" alt="" />
     <Link id="link1" href="./departamentos">Departamentos</Link> </div>
 <div className="ho">
-    {/* <img className="arrow" src="../iconos/arrow-left.svg" alt="" />  */}
     <Link id="link2" href="./cuenta">Inicio</Link> </div>
-<div className="cierre" onClick={cerrar} >Cerrar</div>
 </div>
 
  <div className="lista-cuenta"> 
 <div className="perfil">
     <img src="../iconos/person.svg" alt="" />
-    <Link href="./cuenta" id="link3"> Mi perfil </Link> </div>
+    <Link href="./cuenta" id="link3"> Mi perfil </Link></div>
 <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="./cuenta" id="link4"> Configuración </Link> </div>
-<div className="cierre2" onClick={Cierre} >Cerrar</div>
+    <Link href="./cuenta" id="link4">Configuración </Link></div>
 </div>
 
 </div>
@@ -222,6 +238,8 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
 
         </div>
  </div>
-</>
-  )}    
+
+        </div>
+        </>
+         )}  
        

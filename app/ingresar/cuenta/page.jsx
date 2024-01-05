@@ -5,65 +5,58 @@ import "./style.css"
 
 
 export default function Cuenta () {
-    let aspecto = () => {
-        let modos = document.querySelector(".lista-aspecto")
-
-        modos.style.visibility = "visible";
-}
-    let menu = () => { 
-        let botones = document.querySelector(".hi")
-        let buttons = document.querySelector(".ho")
-        let cerrar = document.querySelector(".cierre")
-        let div = document.querySelector(".lista-productos")
-        let configuraciones = document.querySelector(".datos")
-
-
-        botones.style.visibility = "visible"; 
-        buttons.style.visibility = "visible"; 
-        cerrar.style.visibility = "visible";
-        div.style.visibility = "visible";
-        configuraciones.style.color = 'black';
-        } 
-        
-    let cerrar = () => {
-        let boton = document.querySelector(".hi")
-        let button = document.querySelector(".ho")
-        let cerrar = document.querySelector(".cierre")
-        let div = document.querySelector(".lista-productos ")
-        let configuraciones = document.querySelector(".datos")
-
-        boton.style.visibility = "hidden"; 
-        button.style.visibility = "hidden"; 
-        cerrar.style.visibility = "hidden";
-        div.style.visibility = "hidden";
-        configuraciones.style.color = 'black';
-       }
-
-    let Cuenta = () => {
-        let cuenta = document.querySelector(".lista-cuenta")
-        let ca = document.querySelector(".cierre2")
-        let configuraciones = document.querySelector(".datos") 
-
-        cuenta.style.visibility = "visible";
-        ca.style.visibility = "visible";
-        configuraciones.style.color = 'black'; 
-        }
-        
-    let Cierre = () => {
-        let close = document.querySelector(".lista-cuenta")
-        let ca = document.querySelector(".cierre2")
-        let configuraciones = document.querySelector(".datos")
-
-        close.style.visibility = "hidden";
-        ca.style.visibility = "hidden";
-        configuraciones.style.color = 'black'; 
+    // Navegacion 
+    
+    let productos = () => {
+      let div = document.querySelector(".lista-productos")  
+      let botones = document.querySelector(".hi")
+      let buttons = document.querySelector(".ho") 
+      
+      // let configuraciones = document.querySelector(".datos") 
+      div.classList.toggle("ocultar") 
+      botones.classList.toggle("ocultar")
+      buttons.classList.toggle("ocultar")
     }    
+
+    let cuenta = () => {
+        let lista = document.querySelector(".lista-cuenta") 
+        let perfil = document.querySelector(".perfil")
+        let conf = document.querySelector(".conf")
+        // let configuraciones = document.querySelector(".datos")  
+
+        lista.classList.toggle("ocultar") 
+        perfil.classList.toggle("ocultar")
+        conf.classList.toggle("ocultar")
+    }
+        
+    let aspecto = () => {
+      let modos = document.querySelector(".lista-aspecto") 
+      let modo1 = document.querySelector(".lista-aspecto1")
+      let modo2 = document.querySelector(".lista-aspecto2") 
+      
+      modos.classList.toggle("ocultar") 
+      modo1.classList.toggle("ocultar")
+      modo2.classList.toggle("ocultar")
+    }
+    let darkMode = () => {
+      const body = document.querySelector(".contenido");
+    // Agregar o eliminar la clase "dark" al elemento body
+       body.classList.toggle("dark");
+    }
+
+    let brightMode = () =>{
+      const body = document.querySelector(".contenido");
+      // Agregar o eliminar la clase "dark" al elemento body
+      body.classList.remove("dark");
+    }
+
+
     let titileo = () => {
       let configuraciones = document.querySelector(".datos")
 
       configuraciones.style.color = 'white'; 
     }
-    // Navegacion
+    // Listas
     let Lista1 = () => { 
       let misDatos1 = document.querySelector("#g1")
       let misDatos2 = document.querySelector("#g2")
@@ -140,18 +133,8 @@ export default function Cuenta () {
       misDatos2.style.display = "none";
     }
 
-    let darkMode = () => {
-    const body = document.querySelector(".contenido");
-    // Agregar o eliminar la clase "dark" al elemento body
-    body.classList.toggle("dark");
-    }
 
-    let brightMode = () =>{
-      const body = document.querySelector(".contenido");
-      // Agregar o eliminar la clase "dark" al elemento body
-      body.classList.remove("dark");
-  }
-// Listas
+// Agrupacion de listas
   function funciones1(){
       Lista1();
       Lista2Cierre();
@@ -177,9 +160,7 @@ export default function Cuenta () {
     Lista3Cierre();
   }
 
-  
 
-// Agrupacion de listas
   
            return(
         <>
@@ -188,14 +169,15 @@ export default function Cuenta () {
        
  <h2 className="networking">Networking</h2>
  <h2 className="nos" onClick={aspecto}>Aspecto</h2>
- <h2 id="productos" onClick={menu} className="productos">Productos</h2>
- <h2 onClick={Cuenta} className="micuenta">Mi cuenta</h2>
+ <h2 id="productos" onClick={productos} className="productos">Productos</h2>
+ <h2 onClick={cuenta} className="micuenta">Mi cuenta</h2>
 
  </div>
 
  <div className="contenido" >  {/* Activo modo oscuro */}
 
  <div className="listas"> 
+
  <div className="lista-aspecto">
  <div className="lista-aspecto1" onClick={darkMode}>
     <img src="../iconos/obscure.svg" alt="" />
@@ -216,21 +198,20 @@ export default function Cuenta () {
     <img src="../iconos/houses.svg" alt="" />
     <Link id="link2" href="../ingresar/mansiones">Mansiones</Link> 
     </div> 
-  <div className="cierre" onClick={cerrar}>Cerrar</div>
    </div>
 
     <div className="lista-cuenta"> 
  <div className="perfil">
     <img src="../iconos/person.svg" alt="" />
-    <Link href="./cuenta" id="link3" onClick={Cierre}> Mi perfil </Link> </div>
+    <Link href="./cuenta" id="link3">Mi perfil</Link></div>
  <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="./cuenta" className="titileo" id="link4" onClick={titileo}> Configuración </Link> </div>
- <div className="cierre2" onClick={Cierre}>Cerrar</div>
+    <Link href="./cuenta" className="titileo" id="link4" onClick={titileo}>Configuración</Link></div>
    </div>
 
+
   </div>
-  <h1 id="perfil">Mi perfil</h1>
+  <h1 id="perfil">Mi perfil</h1> 
   
   <div className="datos" >
 

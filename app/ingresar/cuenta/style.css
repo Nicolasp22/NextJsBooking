@@ -7,6 +7,7 @@
     --azul_acero: rgb(20,130,180); 
     --gris: rgba(49, 39, 39, 0.26);
     --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
+    --modoOscuro: #0f0f0f;
 }
 
 html
@@ -14,7 +15,7 @@ html
     font-family: Montserrat, sans-serif;
     background-image: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
     background-repeat: no-repeat;
-    background-size:auto;
+    
 }
 body {
     padding: 0;
@@ -31,34 +32,15 @@ body {
 .networking{
     margin-left: 35px;
 }
-.networking:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
-}
+
 
 .nos {
     text-decoration: none;
     color: black;
-    margin-left: 600px;
-}
-.nos:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
+    margin-left: 650px;
 }
 
-.hi, 
-.ho,
-.cierre,
-.lista-productos,
-.lista-cuenta,
-.cierre2,
-.lista-aspecto
 
-{
-    visibility: hidden;
-    
-    
-}
 #link1,
 #link2,
 #link3, 
@@ -66,82 +48,88 @@ body {
 {
     text-decoration: none;
     color: black;
-    
-    
+    padding: 5px;
 }
 
 .contenido.dark {
-    background-color: black;
     color: white;
+    background-color: var(--modoOscuro);
 }
 
+.ocultar {
+    visibility: visible;
+    background-color: white;
+    color: black;
+    
+}
 
 .listas {
     display: flex;
-    /* margin-left: 1030px;  */
     justify-content: flex-end;
-    gap: 40px;
+    gap: 23px;
     height: 40px;
+  
 }
 
 .lista-aspecto{
     display: grid;
-    text-align: center; 
+    text-align: center;
     grid-template-columns: auto;
     grid-template-rows: auto auto;
     width: 150px;
-    height: 130px;
+    height: 110px;
     background-color: white;
     color: black;
-    
+    visibility: hidden;
+}
+
+.ho, .hi, .lista-aspecto1, .lista-aspecto2, .perfil, .conf{
+    padding: 3px;
 }
 
 .lista-productos {
     display: grid;
     text-align: center;
-    
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     width: 150px;
-    height: 130px;
-    background-color: white;
+    height: 110px;
     color: black;
-   
+    background-color: white;
+    visibility: hidden;
+    
 }
-.lista-productos div,
-.lista-cuenta div,
-.lista-aspecto div
-{
-    padding: 5px;
-}
+
+
 .lista-cuenta{
     display: grid;
     text-align: center;
     margin-right: 0;
     grid-template-columns: auto;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: auto auto;
     width: 150px;
-    height: 130px;
+    height: 110px;
     background-color: white;
     color: black;
+    visibility: hidden;
+
 }
 
-.productos:hover {
+
+
+.productos:hover, .micuenta:hover, .nos:hover, .networking:hover {
     color: var(--azul_acero);
     cursor: pointer;
-  }
+}
 
 .hi:hover,
 .ho:hover,
-.cierre:hover,
 .perfil:hover,
 .conf:hover,
-.cierre2:hover,
 .lista-aspecto1:hover,
 .lista-aspecto2:hover
 {
-   
-    background-color: var(--gris);
+    background-color: grey;
     cursor: pointer; 
 }
 
@@ -149,10 +137,8 @@ body {
 .micuenta {
     margin-right: 15px;
 }
-.micuenta:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
-}
+
+/* Hasta aca interaccion de nav */
 
 #perfil{
     height: fit-content;

@@ -7,13 +7,14 @@
     --azul_acero: rgb(20,130,180); 
     --gris: rgba(49, 39, 39, 0.26);
     --gradiente: (rgba(255, 255, 255, 0.253), rgba(255, 255, 255, 0.404), rgba(231, 220, 220, 0.329));
+    --modoOscuro: #0f0f0f;
 }
-
+ 
 html
 {
     font-family: Montserrat, sans-serif;
     background: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
-    
+      
 }
 body {
    
@@ -30,33 +31,28 @@ body {
 .networking{
     margin-left: 35px;
 }
-.networking:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
-}
+
 
 .nos {
     text-decoration: none;
     color: black;
     margin-left: 650px;
 }
-.nos:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
+
+
+.contenido.dark {
+    color: white;
+    background-color: var(--modoOscuro);
 }
 
-.hi, 
-.ho,
-.cierre,
-.lista-productos,
-.lista-cuenta,
-.cierre2
 
-{
-    visibility: hidden;
-    
+.ocultar {
+    visibility: visible;
+    background-color: white;
+    color: black;
     
 }
+
 #link1,
 #link2,
 #link3, 
@@ -64,47 +60,41 @@ body {
 {
     text-decoration: none;
     color: black;
-    
-    
+    padding: 5px;
 }
-
-.hi:hover,
-.ho:hover,
-.cierre:hover,
-.perfil:hover,
-.conf:hover,
-.cierre2:hover
-{
-    background-color: var(--gris);
-    cursor: pointer; 
-   
-}
-
 
 .listas {
     display: flex;
     /* margin-left: 1030px;  */
-    justify-content: end;
-    gap: 25px;
+    justify-content: flex-end;
+    gap: 23px;
+    height: 40px;
+}
+ 
+.lista-aspecto{
+    display: grid;
+    text-align: center; 
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    width: 150px;
+    height: 110px;
+    background-color: white;
+    color: black;
+    visibility: hidden;
 }
 
 .lista-productos {
     display: grid;
     text-align: center;
-    
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     width: 150px;
-    height: 130px;
+    height: 140px;
     background-color: white;
-    
+    visibility: hidden;
    
 }
-.lista-productos div,
-.lista-cuenta div
-{
-    padding: 5px;
-}
+
 .lista-cuenta{
     display: grid;
     text-align: center;
@@ -112,24 +102,37 @@ body {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
     width: 150px;
-    height: 130px;
+    height: 140px;
     background-color: white;
+    visibility: hidden;
 }
 
 
+.ho, .hi, .lista-aspecto1, .lista-aspecto2, .perfil, .conf{
+    padding: 3px;
+}
 
-.productos:hover {
+.productos:hover, .micuenta:hover, .nos:hover, .networking:hover {
     color: var(--azul_acero);
     cursor: pointer;
-  }
+}
+
+.hi:hover,
+.ho:hover,
+.perfil:hover,
+.conf:hover,
+.lista-aspecto1:hover,
+.lista-aspecto2:hover
+{
+    background-color: grey;
+    cursor: pointer; 
+   
+}
 
 .micuenta {
     margin-right: 15px;
 }
-.micuenta:hover {
-    color: var(--azul_acero);
-    cursor: pointer;
-}
+
 
 
 /* Hasta aca la navegacion */

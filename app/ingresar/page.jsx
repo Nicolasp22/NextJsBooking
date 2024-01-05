@@ -3,7 +3,7 @@ import Link from "next/link"
 
 
 export default function Ingresar () {
-     return (
+     return ( 
         <> 
 <form action="./ingresar/cuenta"
         name="ingresar" hidden 
