@@ -11,24 +11,22 @@ export default function Cuenta () {
       let div = document.querySelector(".lista-productos")  
       let botones = document.querySelector(".hi")
       let buttons = document.querySelector(".ho") 
-      let configuraciones = document.querySelector(".datos") 
-
+      
       div.classList.toggle("ocultar") 
       botones.classList.toggle("ocultar")
       buttons.classList.toggle("ocultar")
-      configuraciones.style.color = 'black'; 
+      
     }    
 
     let cuenta = () => {
         let lista = document.querySelector(".lista-cuenta") 
         let perfil = document.querySelector(".perfil")
         let conf = document.querySelector(".conf")
-        let configuraciones = document.querySelector(".datos")  
-
+      
         lista.classList.toggle("ocultar") 
         perfil.classList.toggle("ocultar")
         conf.classList.toggle("ocultar")
-        configuraciones.style.color = 'black'; 
+        
     }
         
     let aspecto = () => {
@@ -54,16 +52,7 @@ export default function Cuenta () {
       body.classList.remove("dark");
     }
 
-    let titileo = () => {
-      let configuraciones = document.querySelector(".datos")
-
-      configuraciones.style.color = 'white'; 
-    }
-    let titileoNo = () => {
-      let configuraciones = document.querySelector(".datos")
-
-      configuraciones.style.color = 'black'; 
-    }
+   
     // Listas
     let Lista1 = () => { 
       let misDatos1 = document.querySelector("#g1")
@@ -211,10 +200,10 @@ export default function Cuenta () {
     <div className="lista-cuenta"> 
  <div className="perfil">
     <img src="../iconos/person.svg" alt="" />
-    <Link href="./cuenta" onClick={titileoNo} id="link3">Mi perfil</Link></div>
+    <Link href="./cuenta" id="link3">Mi perfil</Link></div>
  <div className="conf">
     <img src="../iconos/gear.svg" alt="" />
-    <Link href="./cuenta" className="titileo" id="link4" onClick={titileo}>Configuración</Link></div>
+    <Link href="./cuenta" className="titileo" id="link4">Configuración</Link></div>
    </div>
 
 
