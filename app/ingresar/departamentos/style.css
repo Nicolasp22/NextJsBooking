@@ -32,7 +32,10 @@ body {
     padding: 0px;
     background-color: white;
     color: black;
+    width: 100%;
+   
 }
+
 .networking{
     margin-left: 35px;
 }
@@ -96,6 +99,7 @@ body {
     background-color: white;
     color: black;
     visibility: hidden;
+    
 }
 
 .lista-productos {
@@ -383,15 +387,15 @@ body {
    
     .listas{
         gap: 55px;
-        margin-bottom: 100px;
+        margin-bottom: 80px;
      
     }
-    .mansiones{
-      gap: 50px 40px;
-      margin-left: 20px;
+    .casas{
+      gap: 50px 20px;
+      margin-left: 40px;
       margin-top: 0px;
     }
-    .mansion1, .mansion2, .mansion3, .mansion4{
+    .casa1, .casa2, .casa3, .casa4{
         width: 450px;
     }
     
@@ -401,10 +405,9 @@ body {
         margin-bottom: 100px;
     
     }
-    .descripcion3, .descripcion4 {
-        width: 450px;
-        margin-bottom: 100px;
-    } 
+    .grilla1{
+        margin-top: 10px;
+    }
    
     .botones{   
         height: 25px;
@@ -413,8 +416,15 @@ body {
         margin-left: 10px;
         
     }
-    
-   
+    #title1, #title3{
+        margin-right: 80px;
+        height: 100px;
+    }
+    #title2, #title4{
+        margin-right: 80px;
+        height: 100px;
+
+    }
 }
 
 @media screen and (max-width: 900px){
@@ -433,7 +443,7 @@ body {
         margin-bottom: 100px;
         
     }
-    .mansiones
+    .casas
     {
         grid-template-columns: auto;
         gap: 10px;
@@ -443,20 +453,19 @@ body {
        
     }
     
-    .mansion1, .mansion2, .mansion3, .mansion4{
+    .casa1, .casa2, .casa3, .casa4{
         margin-left: auto;
         margin-right: auto;
     }
-    .descripcion1, .descripcion2, .descripcion3, .descripcion4 {
+    .descripcion1, .descripcion2 {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 120px;
+        margin-bottom: 80px;
         margin-top: 0;
     }
     .botones{
         margin-left: auto;
         margin-right: auto;
-       
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -467,15 +476,7 @@ body {
         margin-bottom: 40px;
       
     }
-    .mansion1 img {
-        width: 0;
-        flex-grow: 1;
-        object-fit:cover;
-        transition: 1.5s ease-out;
-        transition-delay: 0.3s;
-        border: 1px solid black;
-        border-radius: 7px;
-    }
+   
     .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover
     {
         cursor: zoom-in;
@@ -485,6 +486,13 @@ body {
     .grilla2{
         margin-bottom: 0;
     }
+    
+    #title1, #title2, #title3, #title4{
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
+    
 }
 @media screen and (max-width: 768px){
     .nav{
@@ -493,16 +501,16 @@ body {
     }
     .nos {
         
-        margin-left: 100px; 
+        margin-left: 80px; 
 
     }
    
     .listas{
-        gap: 20px;
+        gap: 15px;
         margin-bottom: 100px;
         
     }
-    .mansiones
+    .casas
     {
         grid-template-columns: auto;
         gap: 10px;
@@ -512,20 +520,20 @@ body {
        
     }
     
-    .mansion1, .mansion2, .mansion3, .mansion4{
+    .casa1, .casa2, .casa3, .casa4{
         margin-left: auto;
         margin-right: auto;
     }
-    .descripcion1, .descripcion2, .descripcion3, .descripcion4 {
+    .descripcion1, .descripcion2  {
         margin-left: auto;
         margin-right: auto;
-        margin-bottom: 120px;
+        margin-bottom: 100px;
         margin-top: 0;
     }
+    
     .botones{
         margin-left: auto;
         margin-right: auto;
-       
         margin-bottom: 0;
         margin-top: 0;
     }
@@ -536,15 +544,7 @@ body {
         margin-bottom: 40px;
       
     }
-    .mansion1 img {
-        width: 0;
-        flex-grow: 1;
-        object-fit:cover;
-        transition: 1.5s ease-out;
-        transition-delay: 0.3s;
-        border: 1px solid black;
-        border-radius: 7px;
-    }
+   
     .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover
     {
         cursor: zoom-in;
@@ -554,9 +554,15 @@ body {
     .grilla2{
         margin-bottom: 0;
     }
+    
+    #title1, #title2, #title3, #title4{
+        margin-right: auto;
+        margin-left: auto;
+        width: 400px;
+    }
 }
 
-@media screen and (max-width: 460px){
+@media screen and (max-width: 560px){
     
     .networking{
         display: none;
@@ -587,7 +593,7 @@ body {
     .lista-aspecto img, .lista-cuenta img, .lista-productos img {
         display: none;
     }
-    .mansiones
+    .casas
     {
         grid-template-columns: auto;
         gap: 10px;
@@ -597,15 +603,22 @@ body {
         
     }
     
-    .mansion1, .mansion2, .mansion3, .mansion4{
+    .casa1, .casa2, .casa3, .casa4{
         margin-left: auto;
         margin-right: auto;
         width: 350px;
     }
-    .descripcion1, .descripcion2, .descripcion3, .descripcion4 {
+    .descripcion1{
         margin-left: auto;
         margin-right: auto;
         margin-bottom: 200px;
+        margin-top: 0;
+        width: 350px;
+    }
+    .descripcion2 {
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 120px;
         margin-top: 0;
         width: 350px;
     }
@@ -625,7 +638,7 @@ body {
         margin-bottom: 40px;
         margin-top: 60px;
     }
-    .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
     {
         cursor: zoom-in;
         width: 300px;
