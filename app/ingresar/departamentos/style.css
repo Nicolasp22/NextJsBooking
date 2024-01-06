@@ -343,15 +343,12 @@ body {
 {
     height: 30px;
     width: 35px;
-    border-radius: 40px; 
     background-color: var(--verde);
     border-style:none; 
     color: black;
     font-weight: 900;
-    clip-path: circle(45% at 50% 50%); 
-    /* clip-path: polygon(0% 0%, 0% 100%, 25% 100%, 25% 25%, 0% 25%, 0% 75%, 25% 75%, 25% 100%, 100% 100%, 100% 0%);  */
-
-
+    clip-path: circle(45% at 50% 50%);  
+    
 }
 .botones button:hover{
     

@@ -14,7 +14,7 @@ html
 {
     font-family: Montserrat, sans-serif;
     background: linear-gradient(rgba(20,130,180), rgba(100,210,180), rgb(100, 210, 190), pink); 
-      
+  
 }
 body {
    
@@ -344,15 +344,12 @@ body {
 {
     height: 30px;
     width: 35px;
-    text-align: center;
-    justify-items: center;
-    border-radius: 40px;
     background-color: var(--verde);
     border-style:none;
     color: black;
     font-weight: 900;
     align-items: center;
-    
+    clip-path: circle(45% at 50% 50%); 
 } 
 .botones button:hover{
     
