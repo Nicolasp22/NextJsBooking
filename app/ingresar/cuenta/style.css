@@ -55,6 +55,7 @@ body {
 .contenido.dark {
     color: white;
     background-color: var(--modoOscuro);
+
 }
 
 .ocultar {

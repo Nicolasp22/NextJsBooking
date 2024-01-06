@@ -35,12 +35,12 @@ export default function Cuenta () {
       let modos = document.querySelector(".lista-aspecto") 
       let modo1 = document.querySelector(".lista-aspecto1")
       let modo2 = document.querySelector(".lista-aspecto2") 
-      let configuraciones = document.querySelector(".datos")
+    
       
       modos.classList.toggle("ocultar") 
       modo1.classList.toggle("ocultar")
       modo2.classList.toggle("ocultar")
-      configuraciones.style.color = 'black'; 
+      
     }
     let darkMode = () => {
       const body = document.querySelector(".contenido");
