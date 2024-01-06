@@ -1,3 +1,12 @@
+ Pautas seleccionadas:
+- Animaciones con CSS
+- Sitio en NextJS
+- Uso de Hooks en NextJS 
+- Cosas raras de CSS (Clip-path) 
+- Desarrollo cool en JS (Swiper)
+
+
+
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
 ## Getting Started
