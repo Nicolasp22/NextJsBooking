@@ -569,7 +569,7 @@ body {
 
     }
     .nav{
-        
+      
         font-size: 10px;
         align-items: center;
         justify-content: space-around;
@@ -578,16 +578,22 @@ body {
     .nos{
         margin-left: 0px;
     }
+   
     .listas {
         display: flex;
         justify-content: space-around;
-        gap: 30px;
+        gap: 20px;
         height: 30px;
         
+    }
+    .productos{
+        margin-left: 10px;
+      
     }
     .lista-aspecto, .lista-cuenta, .lista-productos{
         height: 80px;
         font-size: 10px;
+        
        
     }
     .lista-aspecto img, .lista-cuenta img, .lista-productos img {

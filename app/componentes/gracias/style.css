@@ -75,3 +75,40 @@ h1
     
     
 }
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .gracias{   
+        margin-top: 300px;
+    }
+      
+}
+
+
+@media screen and (max-width: 768px){
+    .gracias{   
+        margin-top: 300px;
+        width: 400px;
+        height: 400px;
+    }
+    h1{
+   height: 100px;
+   width: 400px;
+
+   }
+}
+
+@media screen and (max-width: 460px){
+    .gracias{   
+        margin-top: 300px;
+        width: 350px;
+        height: 400px;
+    }
+    h1{
+   height: 150px;
+   text-align: center;
+   width: 300px;
+
+   }
+}

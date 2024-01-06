@@ -78,5 +78,135 @@ h3{
 .texto{
     margin-top: 10px;
     
-    
+     
+}
+
+/* Responsive */
+
+@media screen and (max-width: 1200px){
+    .gracias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 100px 100px 100px;
+        
+        background-color:  rgb(87, 38, 131); 
+        margin-top: 200px;
+        border-radius: 15px;
+        height: 350px;
+        width: 450px;
+        
+    }
+    h2 {
+        width: 400px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 200px;
+    }
+    .link{
+        margin-top: 100px;
+    }
+}
+
+@media screen and (max-width: 900px){
+    *{
+        position: static;
+    }
+    .gracias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px 120px 100px;
+        
+        background-color:  rgb(87, 38, 131); 
+        margin-top: 200px;
+        border-radius: 15px;
+        height: 350px;
+        width: 400px;
+     
+    }
+    h2 {
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 200px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .link{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 768px){
+    .gracias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px 120px 100px;
+        
+        background-color:  rgb(87, 38, 131); 
+        margin-top: 200px;
+        border-radius: 15px;
+        height: 350px;
+        width: 400px;
+     
+    }
+    h2 {
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 200px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .link{
+        margin-top: 120px;
+    }
+}
+
+@media screen and (max-width: 460px){
+    .gracias{
+        display: grid;
+        grid-template-columns: auto;
+        grid-template-rows: 70px 120px 100px;
+        
+        background-color:  rgb(87, 38, 131); 
+        margin-top: 200px;
+        border-radius: 15px;
+        height: 350px;
+        width: 400px;
+     
+    }
+    h2 {
+        width: 350px;
+        text-align: center;
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 20px;
+    }
+    h3{
+        margin-top: 200px;
+        width: 300px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .link{
+        margin-top: 120px;
+    }
 }
