@@ -10,7 +10,7 @@
     --modoOscuro: #0f0f0f;
 }
 
-
+ 
 html
 {
     font-family: Montserrat, sans-serif;
@@ -475,7 +475,7 @@ body {
       
     }
    
-    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover, .mapa:hover
     {
         cursor: zoom-in;
         width: 350px;
@@ -543,7 +543,7 @@ body {
       
     }
    
-    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover, .mapa:hover
     {
         cursor: zoom-in;
         width: 350px;

@@ -478,7 +478,7 @@ body {
         border: 1px solid black;
         border-radius: 7px;
     }
-    .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover, .mapa
+    .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover, .mapa:hover
     {
         cursor: zoom-in;
         width: 350px;
