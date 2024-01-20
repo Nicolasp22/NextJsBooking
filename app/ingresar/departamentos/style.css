@@ -185,6 +185,7 @@ body {
     cursor: pointer;
 }
 
+
 .descripcion1{
     height: 200px;
     width: 600px;
@@ -223,7 +224,7 @@ body {
 
 }
 
-.casa1 img {
+.casa1 img, .mapa {
     width: 0;
     flex-grow: 1;
     object-fit:cover;
@@ -234,7 +235,7 @@ body {
 }
 
 
-.casa1 img:hover
+.casa1 img:hover, .mapa:hover
 {
     cursor: zoom-in;
     width: 500px;
@@ -474,7 +475,7 @@ body {
       
     }
    
-    .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
     {
         cursor: zoom-in;
         width: 350px;
@@ -542,7 +543,7 @@ body {
       
     }
    
-    .mansion1 img:hover, .mansion2 img:hover, .mansion3 img:hover, .mansion4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
     {
         cursor: zoom-in;
         width: 350px;
@@ -641,7 +642,7 @@ body {
         margin-bottom: 40px;
         margin-top: 60px;
     }
-    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover
+    .casa1 img:hover, .casa2 img:hover, .casa3 img:hover, .casa4 img:hover, .mapa:hover
     {
         cursor: zoom-in;
         width: 300px;

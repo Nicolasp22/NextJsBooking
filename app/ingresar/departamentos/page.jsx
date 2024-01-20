@@ -70,7 +70,7 @@ export default function Departamentos () {
         // Agregar o eliminar la clase "dark" al elemento body
         body.classList.remove("dark");
     }
-
+  
     const [count1, setCount1] = useState(1);
     const [count2, setCount2] = useState(1);
     const [count3, setCount3] = useState(1);
@@ -135,7 +135,8 @@ export default function Departamentos () {
     <img src="../depto1/cama.jpg" alt="" />
     <img src="../depto1/cocina.webp" alt="" />
     <img src="../depto1/pileta.webp" alt="" />
-    <img src="../depto1/pileta2.webp" alt="" />   
+    <img src="../depto1/pileta2.webp" alt="" />
+    <iframe className="mapa" id="mapita1" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3717.7217338695527!2d-157.8398673!3d21.2824797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7c006df50e752837%3A0x16c5b8195512c005!2sBali%20Oceanfront!5e0!3m2!1ses-419!2sar!4v1705711149249!5m2!1ses-419!2sar" width="600" height="350" allowFullScreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>   
     </div>
 <p className="descripcion1">Este hermoso condominio totalmente renovado ubicado en Waikiki - Oceanfront cuenta con materiales de primera calidad como mostrador de granito, equipo de acero inoxidable, TV y DVD, escritorio de trabajo con Internet, refrigerador, estufa, horno, horno microondas.
 Y los mejores lugares, lugares, lugares. Esta unidad puede ver el mar directamente desde la colina del piso 21. El condominio de 500 pies cuadrados con una enorme terraza de 120 pies cuadrados tiene muebles de lujo, de estilo moderno. El condominio tiene sistema de aire acondicionado dividido, Internet de alta velocidad gratuita, TV por cable y servicio telefónico gratuito a todos los EE. UU. y Canadá.
@@ -146,7 +147,7 @@ Y los mejores lugares, lugares, lugares. Esta unidad puede ver el mar directamen
     <button onClick={() => setCount1(count1 + 1)}>+</button>
     Fecha de inicio
     <input id="date1" type="date" required pattern="\d{4}-\d{2}-\d{2}"/>
-    </div>
+    </div> 
     <button onClick={Comprar1} className="boton">Alquilar</button> 
 
 </div>
@@ -159,6 +160,7 @@ Y los mejores lugares, lugares, lugares. Esta unidad puede ver el mar directamen
     <img src="../depto2/cocina.webp" alt="" />
     <img src="../depto2/cama.webp" alt="" />
     <img src="../depto2/pileta.webp" alt="" />
+    <iframe className="mapa" id="mapita2" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d12090.523155008634!2d-73.99303793907166!3d40.74814901862741!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89c25983c8ed5073%3A0x2257119174428e2e!2sSonder%20at%20The%20Nash!5e0!3m2!1ses-419!2sar!4v1705790517921!5m2!1ses-419!2sar" width="600" height="350"></iframe>
     </div>
 <p className="descripcion1">Este es un estudio totalmente amueblado en el ático del sexto piso de un edificio con ascensor en el corazón del centro de Manhattan. La terraza de la azotea de las fotos es exclusiva del alojamiento. 
 El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantadora habitación de hotel privada con baño de mármol. Dormirás profundamente con un colchón de espuma viscoelástica, ventanas de dos plazas, ventilador de techo y un excelente aire acondicionado y calefacción, controlado por ti. Hay café y té, pero no cocina ni utensilios de cocina. Dicho esto, ¡no necesitas cocina cuando algunos de los mejores alimentos del mundo están justo afuera de la puerta!
@@ -185,6 +187,7 @@ El estudio tiene poco menos de 300 pies cuadrados y es básicamente una encantad
     <img src="../depto3/gym.webp" alt="" />
     <img src="../depto3/muebles.webp" alt="" />
     <img src="../depto3/pileta.webp" alt="" />
+    <iframe className="mapa" id="mapita3" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d746937.3031084605!2d-84.23185368700105!3d43.005149268492374!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8824577fc9cc4d9b%3A0xda599fa1adc7b45e!2sDays%20Inn%20by%20Wyndham%20Imlay%20City!5e0!3m2!1ses-419!2sar!4v1705790688507!5m2!1ses-419!2sar" width="600" height="350"></iframe>
     </div>
 <p className="descripcion2">Applewood 204 está muy bien equipada, habitación del segundo piso con excelentes vistas diurnas y nocturnas del estrecho de Mackinac y el puente Mackinac. Ubicado a dos millas de la ciudad en el lado oeste de la isla, estás estratégicamente posicionado para terminar el día viendo la puesta de sol, las estrellas salen y las luces brillan en el puente Mackinac y al otro lado del agua en Saint Ignace, todo desde la comodidad del apartamento.
 Equipado con una cama tamaño king de hierro forjado, baño completo, mininevera, microondas, cafetera y wifi.</p>
@@ -210,6 +213,7 @@ Equipado con una cama tamaño king de hierro forjado, baño completo, mininevera
     <img src="../depto4/camas dobles.webp" alt="" />
     <img src="../depto4/balcon.webp" alt="" />
     <img src="../depto4/pileta.webp" alt="" />
+    <iframe className="mapa" id="mapita4" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d103327.53535991388!2d-83.97006796016063!3d35.97178045040322!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x885c11524f968a25%3A0x35c6e650c4704af4!2sDays%20Inn%20by%20Wyndham%20Knoxville%20East!5e0!3m2!1ses-419!2sar!4v1705790778461!5m2!1ses-419!2sar" width="600" height="350"></iframe>
     </div>
 <p className="descripcion2">
 Habitación privada ubicada en una casa adosada de 3 dormitorios y 1,5 baños ubicada en el histórico Knoxville del Norte. Conveniente a 4th y a Gill, a Happy Holler, y a la zona céntrica Knoxville. Este dormitorio privado tiene una puerta de bloqueo, cama completa, televisión y espacio de trabajo. Los espacios compartidos incluyen sala de estar, cocina, 1,5 baños. La casa está equipada con una cocina totalmente equipada, wifi, sala de estar, estacionamiento en el lugar, y también se proporciona café. Hay lavandería de pago disponible para todos los huéspedes.

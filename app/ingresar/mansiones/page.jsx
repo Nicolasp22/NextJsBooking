@@ -3,7 +3,7 @@ import "./style.css"
 import Link from "next/link"
 import { useEffect, useState } from "react";
 
-
+ 
 
 export default function Mansiones () {
     let productos = () => {
@@ -151,6 +151,7 @@ export default function Mansiones () {
     <img src="../mansion1/comedor.webp" alt="" />
     <img src="../mansion1/habitacion.webp" alt="" />
     <img src="../mansion1/camas dobles.webp" alt="" />
+    <iframe className="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d38969.26417897805!2d4.824317236913235!3d52.378053203046115!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x47c609d4fb64d00b%3A0x92dfa2afada2e47a!2sConscious%20Hotel%20Westerpark!5e0!3m2!1ses-419!2sar!4v1705791278015!5m2!1ses-419!2sar" width="600" height="350"></iframe>
     </div>    
 <p  className="descripcion1">¡Esta lujosa mansión te dejará sin aliento! Apareció en la revista y reality tv show. La propiedad tiene más de 10,000 pies cuadrados con 6 dormitorios y 7 baños. Cada dormitorio tiene su baño privado para mayor comodidad. Además, una impresionante cocina gourmet y comedor. Hermoso patio trasero enorme con una piscina fascinante. Disfruta de este hermoso oasis para relajarte y disfrutar de una estancia cómoda.  
 La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 20 pies de altura es excepcionalmente hermosa. La puerta francesa conduce a la terraza y la piscina. Cada dormitorio tiene sus baños en suite. Máquina de karaoke para el entretenimiento. Actividades y juegos divertidos están disponibles, como mesa de ping-pong, hockey de aire, futbolín, casa de rebote y mucho más. </p>
@@ -174,6 +175,7 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
     <img src="../mansion2/pool.webp" alt="" />
     <img src="../mansion2/spa.webp" alt="" />
     <img src="../mansion2/comedor2.webp" alt="" />
+    <iframe className="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2791.230524438697!2d-123.94067102476062!3d45.60601122396705!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x5494ccba07fb131b%3A0xeaa11137d5469b07!2s539%20S%20Kesterson%20Ct%2C%20Rockaway%20Beach%2C%20OR%2097136%2C%20EE.%20UU.!5e0!3m2!1ses-419!2sar!4v1705791441067!5m2!1ses-419!2sar" width="600" height="350"></iframe>
 </div>
 <p className="descripcion2">Conocida por los lugareños como el lugar donde vivió una celebridad de la lista A durante casi un año durante una filmación de películas en Rockaway Beach y Astoria, la mansión de playa "Volveré" es la opción perfecta para tu reunión familiar posterior a Covid o una gran escapada con múltiples familias y amigos. Esta casa de 6BR/6BA 6400 pies cuadrados ofrece una escapada costera pacífica lejos del ajetreo de la vida de la ciudad, pero lo suficientemente cerca como para disfrutar de todo lo que el océano tiene para ofrecer. Cada habitación tiene unas vistas panorámicas inmejorables al mar, incluidas las cinco suites principales. Reúnete en dos balcones o en la espaciosa terraza de 2500 pies cuadrados, que es el lugar ideal para asar a tu familia una comida, ponte al día sobre la chimenea o disfruta de la hermosa puesta de sol sobre el océano relajándose de la nueva bañera de hidromasaje.
  </p>   
@@ -199,6 +201,7 @@ La entrada a la propiedad te dejará sin aliento. La sala de estar de techo de 2
     <img src="../mansion3/habitacion.webp" alt="" />
     <img src="../mansion3/estar.webp" alt="" />
     <img src="../mansion3/pileta.webp" alt="" />
+    <iframe className="mapa" src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12656.754166428402!2d-82.7917978!3d37.5270526!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88451b7c2394ef0f%3A0x5d4589ea695308e9!2sThe%20Bluegrass%20Palace!5e0!3m2!1ses-419!2sar!4v1705791482589!5m2!1ses-419!2sar" width="600" height="350"></iframe>
  </div>
 <p className="descripcion3">Hay un lugar especial, ubicado en medio de las colinas ondulantes de Kentucky bluegrass, donde 29,000 pies cuadrados de lujo sin paliativos le dan la bienvenida. Donde las puertas privadas se abren a un paraíso idílico de 9 acres todo tuyo.
 Donde una espléndida grandeza del sur se desarrolla dentro de cuatro niveles de 12 suites del dormitorio y un salón de baile, 2 cocinas modernas, 15 baños espaciosos, un escenario de actuación, un cine y una piscina cubierta.
@@ -224,6 +227,7 @@ El Palacio Bluegrass... tus sueños te esperan. </p>
     <img src="../mansion4/sala.webp" alt="a" />
     <img src="../mansion4/habitacion.webp" alt="a" />
     <img src="../mansion4/habitacion2.webp" alt="a" />
+    <iframe className="mapa" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d39665.731380654746!2d-73.34395100024061!3d42.3601496041175!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e75acb55e7085d%3A0xb0c1521e21f2a89d!2sCourtyard%20by%20Marriott%20Lenox%20Berkshires!5e0!3m2!1ses-419!2sar!4v1705791577050!5m2!1ses-419!2sar" width="600" height="350"></iframe>
     </div>
 <p className="descripcion4"> The Winthrop Estate es una Great Estate registrada construida en 1875 para Henri Braem, Embajador de Estados Unidos en Dinamarca y socio en Cunard Steamship Lines, famosa por la ultra lujosa línea de barcos Queen Mary, entre otras. Braem vendió la finca a la familia Winthrop, descendientes de John Winthrop, el gobernador fundador de Massachusetts, desde donde la finca tomó su nombre actual. La mansión está recién renovada con toques modernos y bien pensados en sus orígenes e incluye servicios de primer nivel. </p>    
 <div className="botones">  
